@@ -1,0 +1,45 @@
+include $(FECSOFTWARE_ROOT)/FecHeader.linux
+include $(FECSOFTWARE_ROOT)/config/FecRules.linux
+
+XDAQ_ROOT_DIR:=$(XDAQ_ROOT)
+
+include $(XDAQ_ROOT)/config/mfAutoconf.rules
+include $(XDAQ_ROOT)/config/mfDefs.linux
+
+Project=rpct
+
+
+XDAQ_BACK_TO_ROOT:=$(XDAQ_ROOT)
+
+RpctNeedXdaq = 1
+include $(BUILD_HOME)/rpct/config/mfDefs
+
+IncludeDirs += \
+	${XDAQ_ROOT}/rpct//${Package}/include/rpct/rpcccu \
+	$(XERCESROOT)/include \
+	$(XERCESROOT)/include/xercesc \
+	$(FECSOFTWARE_ROOT)/$(Project)/$(Package)/include \
+	$(FECSOFTWARE_ROOT)/generic/include \
+	$(FECSOFTWARE_ROOT)/FecSupervisor/include \
+	$(FECUSBSOFT_INCLUDE) \
+	${FECSOFT_INCLUDE} \
+	$(SBSINCLUDEDIR) $(CAENINCLUDEDIR) \
+	$(HALINCLUDEDIR)
+
+LibraryDirs += \
+	$(XERCESROOT)/lib \
+	$(DEVICEDRIVERPATH) \
+	$(FECUSBSOFTLIBDIR) \
+	${FECSOFTWARE_ROOT}/generic/lib/linux/x86 \
+	$(SBSLIBDIR) $(CAENLIBDIR) \
+	$(HALLIBDIR)
+	
+	
+UserCCFlags += ${FECSOFT_C++FLAGS} \
+	${BUSADAPTERC++FLAG} 
+
+#Libraries += lboxaccess  readline ncurses \
+#	$(XERCESLIB) $(FECSOFT_LIB) $(FECUSBSOFT_LIB) $(HALLIB) $(SBSLIB) $(CAENLIB) 
+
+RpctFecLibs = DeviceAccess $(XERCESLIB) $(FECSOFT_LIB) $(FECUSBSOFT_LIB) $(HALLIB) $(SBSLIB) $(CAENLIB) 
+ 

@@ -1,0 +1,12 @@
+JobName = "AOTest_1"; 
+JobType = "Normal"; 
+Executable = "aoscript.csh";
+Arguments = "some-argument";
+CPUTime = "";
+StdOutput = "std.out";
+StdError = "std.err";
+Owner = "aosorio"; 
+OutputSandbox = {"std.out", "std.err" };
+OutputSE = ""; 
+InputSandbox = {"aoscript.csh"};
+OutputSandboxBaseDestURI="gsiftp://localhost";

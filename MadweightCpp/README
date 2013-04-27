@@ -1,0 +1,14 @@
+code00: PGSAnalyzer simple Loop over events
+
+code01: PGSAnalyzer Loop over permutations
+
+code02: LHEAnalyzer Loop over LHE events (for ttbar)
+
+code03: Analyze weights for sig & bkg ( discriminator )
+
+SUSY studies:
+
+code04: LHEAnalyzer Loop over LHE events (for stops)
+
+
+

@@ -1,0 +1,7 @@
+programa para calcular los flujos de neutrinos en las fuentes en funcion de los parametros de mezcla.
+
+----usando ublas (from boostlibraries) para manipular matrices
+
+
+
+

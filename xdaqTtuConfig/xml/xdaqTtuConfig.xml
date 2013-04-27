@@ -1,0 +1,14 @@
+<?xml version='1.0'?>
+<xc:Partition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xc="http://xdaq.web.cern.ch/xdaq/xsd/2004/XMLConfiguration-30">
+
+	<!-- Declare a context that contain applcation -->
+    	<xc:Context url="http://vmepcS2G18-13:1976">
+		<!-- Declare a xdaqTtuConfig application -->
+                <xc:Application class="xdaqTtuConfig" id="10" instance ="0" network="local"/>
+		<!-- Shared object library that contains the xdaqTtuConfig implementation -->		
+		<xc:Module>/nfshome0/rpcdev/TriDAS/rpct/xdaqTtuConfig/lib/linux/x86_slc4/libxdaqttuconfig.so</xc:Module>
+        </xc:Context>
+
+</xc:Partition>
+
+

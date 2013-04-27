@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<xc:Partition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xc="http://xdaq.web.cern.ch/xdaq/xsd/2004/XMLConfiguration-30">
+
+    	<xc:Context url="http://lxcmd101:1972">
+                <xc:Application class="TemperatureServiceSOAPQuery" id="30" network="local"/>
+		<xc:Module>/users/xdaq/TriDAS/daq/examples/lib/linux/x86/libTemperatureServiceSOAPQuery.so</xc:Module>
+
+        </xc:Context>
+
+    	<xc:Context url="http://services.xmethods.net:80/soap/servlet/rpcrouter">
+                <xc:Application class="TemperatureService" id="31" instance="0" network="local"/>
+        </xc:Context>
+
+
+</xc:Partition>

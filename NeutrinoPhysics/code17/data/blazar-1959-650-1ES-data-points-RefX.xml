@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<!DOCTYPE TGraphFromXML PUBLIC "" "graph_config.dtd" []>
+<TGraphFromXML>
+  <DataSets Id="0" Name="set0" Marker="25" Colour="38" Size="1.0">
+    <Point Id="1" x="11.1786" y="-12.6717" xelow="0" xeup="0" yelow="0" yeup="0"/>
+    <Point Id="2" x="11.3393" y="-12.4772" xelow="0" xeup="0" yelow="0" yeup="0"/>
+    <Point Id="3" x="14.1786" y="-10.6657" xelow="0" xeup="0" yelow="0" yeup="0"/>
+    <Point Id="4" x="14.2321" y="-10.5319" xelow="0" xeup="0" yelow="0" yeup="0"/>
+    <Point Id="5" x="14.3929" y="-10.4711" xelow="0" xeup="0" yelow="0" yeup="0"/>
+    <Point Id="6" x="14.6607" y="-10.9818" xelow="0" xeup="0" yelow="0" yeup="0"/>
+    <Point Id="7" x="14.7679" y="-11.0912" xelow="0" xeup="0" yelow="0" yeup="0"/>
+    <Point Id="8" x="14.7679" y="-11.1398" xelow="0" xeup="0" yelow="0" yeup="0"/>
+  </DataSets>
+  <DataSets Id="1" Name="set1" Marker="26" Colour="4" Size="1.0">
+    <Point Id="1" x="17.0196" y="-10.0156" xelow="0" xeup="0" yelow="0" yeup="0"/>
+    <Point Id="2" x="17.2941" y="-10.0156" xelow="0" xeup="0" yelow="0" yeup="0"/>
+    <Point Id="3" x="17.451" y="-10.0334" xelow="0" xeup="0" yelow="0" yeup="0"/>
+    <Point Id="4" x="17.6471" y="-10.0423" xelow="0" xeup="0" yelow="0" yeup="0"/>
+    <Point Id="5" x="17.8039" y="-10.1047" xelow="0" xeup="0" yelow="0" yeup="0"/>
+    <Point Id="6" x="18.0392" y="-10.1759" xelow="0" xeup="0" yelow="0" yeup="0"/>
+  </DataSets>
+  <DataSets Id="2" Name="set2" Marker="26" Colour="7" Size="1.2">
+    <Point Id="1" x="14.549" y="-10.5501" xelow="0" xeup="0" yelow="0" yeup="0"/>
+  </DataSets>
+  <DataSets Id="3" Name="set3" Marker="24" Colour="4" Size="1.0">
+    <Point Id="1" x="17.0196" y="-9.8552" xelow="0" xeup="0" yelow="0" yeup="0"/>
+    <Point Id="2" x="17.2941" y="-9.7929" xelow="0" xeup="0" yelow="0" yeup="0"/>
+    <Point Id="3" x="17.4902" y="-9.7929" xelow="0" xeup="0" yelow="0" yeup="0"/>
+    <Point Id="4" x="17.6863" y="-9.7751" xelow="0" xeup="0" yelow="0" yeup="0"/>
+    <Point Id="5" x="17.8039" y="-9.8018" xelow="0" xeup="0" yelow="0" yeup="0"/>
+    <Point Id="6" x="17.9216" y="-9.8285" xelow="0" xeup="0" yelow="0" yeup="0"/>
+    <Point Id="7" x="18.1569" y="-9.882" xelow="0" xeup="0" yelow="0" yeup="0"/>
+  </DataSets>
+  <DataSets Id="4" Name="set4" Marker="20" Colour="4" Size="0.7">
+    <Point Id="1" x="14.7059" y="-10.5679" xelow="0" xeup="0" yelow="0" yeup="0"/>
+    <Point Id="2" x="14.8235" y="-10.5323" xelow="0" xeup="0" yelow="0" yeup="0"/>
+    <Point Id="3" x="14.902" y="-10.4343" xelow="0" xeup="0" yelow="0" yeup="0"/>
+    <Point Id="4" x="15.0588" y="-10.3898" xelow="0" xeup="0" yelow="0" yeup="0"/>
+    <Point Id="5" x="15.1373" y="-10.3363" xelow="0" xeup="0" yelow="0" yeup="0"/>
+    <Point Id="6" x="15.098" y="-10.265" xelow="0" xeup="0" yelow="0" yeup="0"/>
+  </DataSets>
+  <DataSets Id="5" Name="set5" Marker="20" Colour="3" Size="1.0">
+    <Point Id="1" x="25.5952" y="-10.7184" xelow="0" xeup="0" yelow="0.1461" yeup="0.3518"/>
+    <Point Id="2" x="25.8172" y="-11.0862" xelow="0" xeup="0" yelow="0.1299" yeup="0.3031"/>
+    <Point Id="3" x="26.0796" y="-11.113" xelow="0" xeup="0" yelow="0.0704" yeup="0.1733"/>
+    <Point Id="4" x="26.2723" y="-11.2156" xelow="0" xeup="0" yelow="0.1083" yeup="0.2328"/>
+    <Point Id="5" x="26.5126" y="-11.3236" xelow="0" xeup="0" yelow="0.0975" yeup="0.2274"/>
+    <Point Id="6" x="26.7305" y="-11.4966" xelow="0" xeup="0" yelow="0.157" yeup="0.4276"/>
+  </DataSets>
+  <DataSets Id="6" Name="set6" Marker="26" Colour="2" Size="0.8">
+    <Point Id="1" x="25.5948" y="-10.7021" xelow="0" xeup="0" yelow="0.3573" yeup="0.1462"/>
+    <Point Id="2" x="25.84" y="-11.0375" xelow="0" xeup="0" yelow="0.2977" yeup="0.1245"/>
+    <Point Id="3" x="26.0296" y="-10.9994" xelow="0" xeup="0" yelow="0.1732" yeup="0.0812"/>
+    <Point Id="4" x="26.2447" y="-11.037" xelow="0" xeup="0" yelow="0.2165" yeup="0.0975"/>
+    <Point Id="5" x="26.4829" y="-11.0422" xelow="0" xeup="0" yelow="0.2381" yeup="0.1082"/>
+    <Point Id="6" x="26.7242" y="-11.1935" xelow="0" xeup="0" yelow="0.4547" yeup="0.1678"/>
+  </DataSets>
+  <DataSets Id="7" Name="set7" Marker="23" Colour="38" Size="1.0">
+    <Point Id="1" x="26.4839" y="-9.9542" xelow="0" xeup="0" yelow="0.1949" yeup="0.0974"/>
+    <Point Id="2" x="26.6077" y="-10.1814" xelow="0" xeup="0" yelow="0.1678" yeup="0.0812"/>
+    <Point Id="3" x="26.7291" y="-10.2895" xelow="0" xeup="0" yelow="0.1353" yeup="0.0704"/>
+    <Point Id="4" x="26.8695" y="-10.1757" xelow="0" xeup="0" yelow="0.1083" yeup="0.0488"/>
+    <Point Id="5" x="26.9664" y="-10.2514" xelow="0" xeup="0" yelow="0.2057" yeup="0.0974"/>
+    <Point Id="6" x="27.0895" y="-10.4461" xelow="0" xeup="0" yelow="0.249" yeup="0.1137"/>
+    <Point Id="7" x="27.239" y="-10.7653" xelow="0" xeup="0" yelow="0.4223" yeup="0.1679"/>
+    <Point Id="8" x="27.357" y="-10.7165" xelow="0" xeup="0" yelow="0.4005" yeup="0.1677"/>
+  </DataSets>
+</TGraphFromXML>

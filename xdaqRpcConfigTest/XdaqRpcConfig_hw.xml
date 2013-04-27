@@ -1,0 +1,22 @@
+<?xml version='1.0'?>
+<xc:Partition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xc="http://xdaq.web.cern.ch/xdaq/xsd/2004/XMLConfiguration-30">
+	
+	<xc:Context id="0" url="http://pccmsrpct:1972">
+		<xc:Application class="XdaqRpcConfig" id="8050" instance="0" network="local">
+		</xc:Application>
+		
+		<xc:Module>${XDAQ_ROOT}/lib/linux/x86/libxdaqrpcconfig.so</xc:Module>
+	</xc:Context>
+	
+	<xc:Context url="http://pccmsrpct:8080/rpct-dbservice/services/rpctdbservice">
+		<xc:Application class="RpctDbService" id="8050" instance="0" network="local"/>
+	</xc:Context>
+	<!--<xc:Context url="http://localhost:8081/rpct-dbservice/services">
+        <xc:Application class="RpctDbService" id="8061" instance="100" network="local"/>
+    </xc:Context>
+	<xc:Context url="http://mpport:1972">
+		<xc:Application class="XdaqLBoxAccess" id="7001" instance="0" network="local" />
+	</xc:Context>-->
+
+</xc:Partition>

@@ -1,0 +1,5 @@
+<export>
+    <lib name=StudyL1TriggerL1GtExtractInfo>
+</export>
+<flags CXXFLAGS="-DGZSTREAM_NAMESPACE=gz">
+<flags LDFLAGS="-lz">

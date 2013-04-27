@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!ELEMENT TGraphFromXML (DataSets)+ >
+<!ELEMENT DataSets (Point)+ >
+<!ATTLIST DataSets
+  Id	 CDATA	#REQUIRED
+  Name   CDATA	#REQUIRED
+  Marker CDATA	#REQUIRED
+  Colour CDATA	#REQUIRED
+  Size   CDATA	#REQUIRED
+>
+
+<!ELEMENT Point (#PCDATA) >
+
+<!ATTLIST Point
+  Id	CDATA	#REQUIRED
+  x     CDATA	#REQUIRED
+  y     CDATA	#REQUIRED
+  xelow CDATA	#REQUIRED
+  xeup  CDATA	#REQUIRED
+  yelow CDATA	#REQUIRED
+  yeup  CDATA	#REQUIRED
+>

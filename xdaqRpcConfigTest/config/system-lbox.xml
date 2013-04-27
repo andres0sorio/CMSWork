@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system>
+	<ring pciSlot="0" fecAddr="6" ringAddr="0">
+		<!--<linkBox id="1000" ccuAddr="10" desc="LBox 10">
+			<linkBoard pos="3" id="1040" desc="lb 3" />
+			<linkBoard pos="4" id="1050" desc="lb 4" />
+		</linkBox>
+		<linkBox id="1500" ccuAddr="15" desc="LBox 15">
+			<linkBoard pos="3" id="1540" desc="lb 3" />
+			<linkBoard pos="4" id="1550" desc="lb 4" />
+		</linkBox>-->
+		<linkBox id="2000" ccuAddr="20" desc="LBox 20">
+			<linkBoard pos="0" id="2010" desc="lb1" />
+			<linkBoard pos="1" id="2020" desc="lb2" />
+			<linkBoard pos="2" id="2030" desc="lb3" />
+			<linkBoard pos="3" id="2040" desc="lb4" />
+			<linkBoard pos="4" id="2050" desc="lb5" />
+			<linkBoard pos="5" id="2060" desc="lb6" />
+			<linkBoard pos="6" id="2070" desc="lb7" />
+			<linkBoard pos="7" id="2080" desc="lb8" />
+			<linkBoard pos="8" id="2090" desc="lb9" />
+		</linkBox>
+		<linkBox id="2500" ccuAddr="25" desc="LBox 25">
+			<!--<linkBoard pos="0" id="3510" desc="lb7788" />-->
+			<!--<linkBoard pos="1" id="3520" desc="lb4778" />-->
+			<!--<linkBoard pos="2" id="3530" desc="lb4776" />-->
+			<linkBoard pos="3" id="2540" desc="lb3" />
+			<linkBoard pos="4" id="2550" desc="lb4" />
+			<linkBoard pos="5" id="2560" desc="lb5" />
+			<linkBoard pos="6" id="2570" desc="lb6" />			
+			<linkBoard pos="7" id="2580" desc="lb7" />
+			<linkBoard pos="8" id="2590" desc="lb8" />
+		</linkBox>
+		<linkBox id="3000" ccuAddr="30" desc="LBox 30">
+			<linkBoard pos="0" id="3010" desc="lb7785" />
+			<linkBoard pos="1" id="3020" desc="lb7787" />
+			<linkBoard pos="2" id="3030" desc="lb7791" />
+			<linkBoard pos="3" id="3040" desc="lb7786" />
+			<linkBoard pos="4" id="3050" desc="lb7789" />
+			<linkBoard pos="5" id="3060" desc="lb7769" />
+			<linkBoard pos="6" id="3070" desc="lb7768" />
+			<linkBoard pos="7" id="3080" desc="lb7790" />
+			<linkBoard pos="8" id="3090" desc="lb7773" />
+		</linkBox>
+		<linkBox id="3500" ccuAddr="35" desc="LBox 35">
+			<!--<linkBoard pos="0" id="3510" desc="lb7788" />-->
+			<!--<linkBoard pos="1" id="3520" desc="lb4778" />-->
+			<!--<linkBoard pos="2" id="3530" desc="lb4776" />-->
+			<linkBoard pos="3" id="3540" desc="lb4777" />
+			<linkBoard pos="4" id="3550" desc="lb4775" />
+			<linkBoard pos="5" id="3560" desc="lb4773" />
+			<linkBoard pos="6" id="3570" desc="lb4781" />			
+			<linkBoard pos="7" id="3580" desc="lb6683" />
+			<linkBoard pos="8" id="3590" desc="lb6689" />
+		</linkBox>
+		<!--<linkBox id="3000" ccuAddr="30" desc="LBox 30">
+			<linkBoard pos="3" id="3040" desc="lb 3" />
+			<linkBoard pos="4" id="3050" desc="lb 4" />
+		</linkBox>
+		<linkBox id="3500" ccuAddr="35" desc="LBox 35">
+			<linkBoard pos="3" id="3540" desc="lb 3" />
+			<linkBoard pos="4" id="3550" desc="lb 4" />
+		</linkBox>
+		<linkBox id="4000" ccuAddr="40" desc="LBox 40">
+			<linkBoard pos="3" id="4040" desc="lb 3" />
+			<linkBoard pos="4" id="4050" desc="lb 4" />
+		</linkBox>
+		<linkBox id="4500" ccuAddr="45" desc="LBox 45">
+			<linkBoard pos="3" id="4540" desc="lb 3" />
+			<linkBoard pos="4" id="4550" desc="lb 4" />
+		</linkBox>
+		<linkBox id="5000" ccuAddr="50" desc="LBox 50">
+			<linkBoard pos="3" id="5040" desc="lb 3" />
+			<linkBoard pos="4" id="5050" desc="lb 4" />
+		</linkBox>
+		<linkBox id="5500" ccuAddr="55" desc="LBox 55">
+			<linkBoard pos="3" id="5540" desc="lb 3" />
+			<linkBoard pos="4" id="5550" desc="lb 4" />
+		</linkBox>
+		<linkBox id="6000" ccuAddr="60" desc="LBox 60">
+			<linkBoard pos="3" id="6040" desc="lb 3" />
+			<linkBoard pos="4" id="6050" desc="lb 4" />
+		</linkBox>-->
+	    <!--	<linkBox id="6500" ccuAddr="65" desc="LBox 60">
+		</linkBox> -->	
+	    </ring>
+	<!--<link id="500" fromid="210" toid="111" toslot="0" desc="link 1"/>  
+		<link id="501" fromid="220" toid="112" toslot="0" desc="link 2"/>-->
+</system>

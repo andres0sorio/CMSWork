@@ -1,0 +1,7 @@
+VirtualOrganisation = "uniandes.edu.co";
+Nodes = {
+[NodeName = "gsj_0"; file="/home/aosorio/Tier3-tests/0/aoscript_0_ua.jdl";],
+[NodeName = "gsj_1"; file="/home/aosorio/Tier3-tests/1/aoscript_1_ua.jdl";]
+};
+Type = "collection";
+

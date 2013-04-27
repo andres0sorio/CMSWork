@@ -1,0 +1,4 @@
+#!/bin/bash
+cd ~/bin
+xdaqappdir=/nfshome0/rpcdev/TriDAS/rpct/xdaqRbcControlQuickSync
+$XDAQ_ROOT/bin/xdaq.sh -h vmepcS2G18-13 -p 1976 -c $xdaqappdir/xml/RbcControlQuickSync.xml

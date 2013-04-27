@@ -1,0 +1,12 @@
+Creating the doxygen documentation for this software:
+
+* make sure you have doxygen installed
+* if possible, have also the additional package: Graphviz package
+
+Now on the prompt just simply type:
+
+% doxygen config
+
+"config" has the defaults for producing the documentation (you can edit it if you want some further improvement)
+
+

@@ -1,0 +1,350 @@
+#!/usr/bin/env python
+#-*- coding: ISO-8859-1 -*-
+#
+# Author:  Valentin Kuznetsov
+
+"""
+CMS DBS file manager which find files based on dataset/run/event/branch 
+information from DBS.
+"""
+
+import os
+import sys
+import types
+import string
+import urllib
+import urllib2
+import traceback
+from   optparse import OptionParser
+
+class FWOptionParser: 
+  """
+     FWOptionParser is main class to parse options
+  """
+  def __init__(self):
+    self.parser = OptionParser()
+    self.parser.add_option("-v", "--verbose", action="store_true", 
+         dest="verbose",
+         help="specify verbose output")
+    self.parser.add_option("-s", "--site", action="store", type="string", 
+         default=False, dest="site",
+         help="specify CMS tier site or storage element")
+    self.parser.add_option("-r", "--run", action="store", type="string",
+         default=False, dest="run",
+         help="specify run number")
+    self.parser.add_option("-d", "--dataset", action="store", type="string",
+         default=False, dest="dataset",
+         help="specify dataset name")
+    self.parser.add_option("-l", "--lfn", action="store", type="string",
+         default=False, dest="lfn",
+         help="specify dataset name")
+    self.parser.add_option("-p", "--protocol", action="store", type="string",
+         default=False, dest="protocol",
+         help="specify protocol: rifo, srm, direct. By default use site protocol")
+
+  def getOpt(self):
+    """
+        Returns parse list of options
+    """
+    return self.parser.parse_args()
+
+class FWManager(object):
+    """
+       Class responsible for DBS, SiteDB, phedex interaction 
+    """
+    def __init__(self, verbose = None):
+        self.verbose  = verbose
+        self.dbs      = DBSManager(verbose = verbose)
+        self.sdb      = SiteDBManager(verbose)
+        self.phedex   = PhedexManager(self.sdb, verbose)
+        self.sitecfg  = SiteConfigManager(self.sdb, verbose)
+
+    def getFiles(self, site, run = None, dataset = None, lfn = None, protocol = ''):
+        if  not site:
+            raise Exception("Site is required parameter")
+        orig_site = site
+        if  not protocol:
+            try:
+                protocol = self.sitecfg.protocol(site)
+            except:
+                print "WARNING: unable to get site configuration file"
+                print "will use srm as default protocol"
+                protocol = 'srm'
+            if  self.verbose:
+                print "Found site protocol", protocol
+        if  not protocol:
+            print 'WARNING: no specific protocol found, will use srm as default'
+            protocol = 'srm'
+        if  site.find('.') == -1:
+            if  self.verbose:
+                print "Found CMS name", site
+            site = self.sdb.getSEName(site)
+            if  self.verbose:
+                print "Resolved to", site
+        if  not site:
+            print "Unable to resolve %s into SE" % orig_site
+            print "Please contact hn-cms-facilitiesOps@cern.ch to update SiteDB for this site"
+            print "and/or submit Savannah ticket to the following URL"
+            print "https://savannah.cern.ch/support/?func=additem&group=cmscompinfrasup&assigned_to=4435&category_id=108"
+            sys.exit(0)
+        if  lfn:
+            lfnList = [lfn]
+        else:
+            lfnList = self.dbs.getData(site, run, dataset)
+        if  self.verbose:
+            print "LFN list:"
+            for lfn in lfnList:
+                print lfn
+        pfnList = []
+        step = 100
+        for idx in range(0, len(lfnList), step):
+            if  idx+step < len(lfnList):
+                end = idx+step
+            else:
+                end = len(lfnList)
+#            pfnList += self.phedex.getFiles(lfnList[idx:end], site, protocol)
+            pfnList = self.phedex.getFiles(lfnList[idx:end], site, protocol)
+            for pfn in pfnList:
+                print pfn
+                sys.__stdout__.flush()
+#        return pfnList
+
+class SiteConfigManager(object):
+    """
+       Handle site configuration
+    """
+    def __init__(self, sdbmgr, verbose = None):
+        self.sdb     = sdbmgr
+        self.verbose = verbose
+        self.url     = '/cgi-bin/cmssw.cgi/COMP/SITECONF'
+        self.server  = 'http://cmssw.cvs.cern.ch'
+        self.ctype   = 'text/plain'
+
+    def protocol(self, site):
+        if  site.find(".") != -1:
+            site = self.sdb.getCMSName(site)
+        url    = '/%s/JobConfig/site-local-config.xml' % site
+        params = {'revision' : '1.3', 'content-type':self.ctype} 
+        url    = self.server+self.url + url
+        if  self.verbose:
+            print 'SiteConfig URL', url
+        data   = urllib2.urlopen(url,
+                         urllib.urlencode(params, doseq=True)).read()
+        protocol = ''
+        event = 0
+        for line in data.split('\n'):
+            if  line.find('<event-data>') != -1:
+                event = 1
+            if  event and line.find('<catalog') != -1:
+                protocol = line.split('"')[1].split('protocol=')[-1]
+                break
+            if  line.find('</event-data>') != -1:
+                event = 0
+        return protocol
+
+class SiteDBManager(object):
+    """
+       Class responsibile for sitedb services
+    """
+    def __init__(self, verbose = None):
+        self.verbose = verbose
+        self.url     = "/sitedb/json/index/"
+        self.server  = "https://cmsweb.cern.ch"
+        self.ctype   = 'application/json'
+        
+    def getCMSName(self, se):
+        """
+           get CMS name for given SE
+        """
+        params = {'name' : se} 
+        url = self.server+self.url + "SEtoCMSName"
+        datastr = urllib2.urlopen(url,
+                         urllib.urlencode(params, doseq=True)).read()
+        data = eval(compile(datastr, '<string>', 'eval'))
+        if  data and type(data) is types.DictType:
+            return data['0']['name']
+        return None
+        
+    def getSEName(self, site):
+        """
+           get SE name for given CMS name
+        """
+        params = {'name' : site} 
+        url = self.server+self.url + "CMSNametoSE"
+        datastr = urllib2.urlopen(url,
+                         urllib.urlencode(params, doseq=True)).read()
+        data = eval(compile(datastr, '<string>', 'eval'))
+        if  data and type(data) is types.DictType:
+            return data['0']['name']
+        return None
+
+class PhedexManager(object):
+    """
+       Class responsibile for phedex services
+    """
+    def __init__(self, sitedbmgr, verbose = None):
+        self.verbose = verbose
+        self.sitedb  = sitedbmgr
+        self.server  = 'https://cmsweb.cern.ch'
+        self.url     = "/phedex/datasvc/json/prod/"
+        self.ctype   = 'application/json'
+        self.se_cache = {}
+
+    def getFiles(self, lfn, se, protocol = 'rfio'):
+        """
+           use phedex data service to look-up pfn from given lfn
+        """
+        nodes   = []
+        if  not self.se_cache.has_key(se):
+            site = self.sitedb.getCMSName(se)
+            # Do some magic for T1's. 
+            # SiteDB returns names as T1_US_FNAL, while
+            # phedex will need name_Buffer, 
+            # according to Simon there is a 
+            # savannah ticket for that.
+            if  site and site.count('T1', 0, 2) == 1:
+                if  site.count('Buffer') == 0 and site.count('Buffer') ==0:
+                    site = "%s_Buffer" % site
+            if  self.verbose:
+                print "%s ==> %s" % (se, site)
+            if  site:
+                nodes.append(site)
+            self.se_cache[se] = nodes
+        else:
+            nodes = self.se_cache[se]
+#        params  = {'node' : nodes, 'lfn' : lfn, 'protocol' : 'srmv2'}
+        params  = {'node' : nodes, 'lfn' : lfn, 'protocol' : protocol}
+        url = self.server+self.url+'lfn2pfn'
+        datastr = urllib2.urlopen(url,
+                         urllib.urlencode(params, doseq=True)).read()
+        if  str(datastr).lower().find("error") != -1:
+            raise Exception("Phedex error '%s' " % datastr)
+        data = eval(compile(datastr.replace('null','None'), '<string>', 'eval'))
+        pfnList = []
+        for item in data['phedex']['mapping']:
+            pfn = item['pfn']
+            if  pfn:
+                pfnList.append(pfn)
+        return pfnList
+      
+class DBSManager(object):
+  def __init__(self, dbsInst = "cms_dbs_prod_global", verbose = None):
+      self.verbose    = verbose
+      self.dbs        = dbsInst
+      self.global_url = "http://cmsdbsprod.cern.ch"
+      self.params     = {'apiversion': 'DBS_2_0_2', 'api': 'executeQuery',
+                         'query': ''}
+      self.dbslist    = self.dbsinstances()
+
+  def getdbsurl(self,dbs):
+      if  dbs.find('tier0') != -1:
+          url="http://cmst0dbs.cern.ch"
+      else:
+          url = self.global_url
+      return url + "/%s/servlet/DBSServlet" % dbs
+
+  def dbsinstances(self):
+      dbslist = ['cms_dbs_prod_global',
+                 'cms_dbs_caf_analysis_01',
+                 'cms_dbs_ph_analysis_01',
+                 'cms_dbs_ph_analysis_02',
+                ]
+      for i in range(1,11):
+          if  i < 10:
+              dbslist.append('cms_dbs_prod_local_0%s' % i)
+          else:
+              dbslist.append('cms_dbs_prod_local_%s' % i)
+      return dbslist
+
+  def exe(self, query):
+      """
+      Execute DBS query
+      """
+      params = dict(self.params)
+      params['query'] = query
+      for dbs in self.dbslist:
+          dbsurl = self.getdbsurl(dbs)
+          data = urllib2.urlopen(dbsurl,
+                         urllib.urlencode(params, doseq=True)).read()
+          break
+      return dbsparser(data)
+
+  def getData(self, site, run, dataset=None):
+      query = "find file where site = %s" % site
+      if  run:
+          query += " and run = %s" % run 
+      if  dataset:
+          query += " and dataset = %s" % dataset 
+      if  self.verbose:
+          print "DBS query", query
+      return self.exe(query)
+
+def dbsparser(data):
+  try:
+      import elementtree.ElementTree as ET
+      return ET_parseDBSoutput(data)
+  except:
+      pass
+  return parseDBSoutput(data)
+      
+def parseDBSoutput(data):
+    """
+    Very simple XML parser in case remote site doesn't have ElementTree.
+    """
+    oList = []
+    for item in data.split('\n'):
+        if item.find("<result")==-1: continue
+        r   = item.split("'")
+        item = []
+        for idx in range(1,len(r),2):
+            elem = r[idx]
+            oList.append(elem)
+    return oList
+
+def ET_parseDBSoutput(data):
+    elem  = ET.fromstring(data)
+    oList = []
+    for i in elem:
+        if i.tag=="result":
+           if i.attrib.has_key('FILES_FILESIZE') and \
+              i.attrib.has_key('FILES_LOGICALFILENAME'):
+              oList.append((i.attrib['FILES_LOGICALFILENAME'],
+                            sizeFormat(i.attrib['FILES_FILESIZE']) ))
+           elif i.attrib.has_key('FILES_LOGICALFILENAME'):
+              oList.append(i.attrib['FILES_LOGICALFILENAME'])
+           elif i.attrib.has_key('DATATIER_NAME'):
+              oList.append(i.attrib['DATATIER_NAME'])
+           elif i.attrib.has_key('BLOCK_NAME') and \
+                i.attrib.has_key('STORAGEELEMENT_SENAME'):
+              oList.append((i.attrib['BLOCK_NAME'],
+                            i.attrib['STORAGEELEMENT_SENAME']))
+           elif i.attrib.has_key('BLOCK_NAME'):
+              oList.append(i.attrib['BLOCK_NAME'])
+    return oList
+
+#
+# main
+#
+if __name__ == "__main__":
+    optManager  = FWOptionParser()
+    (opts,args) = optManager.getOpt()
+    site        = None
+    dataset     = None
+    run         = None
+    protocol    = None
+    lfn         = None
+    if  opts.site:
+        site = opts.site
+    if  opts.dataset:
+        dataset = opts.dataset
+    if  opts.run:
+        run = opts.run
+    if  opts.protocol:
+        protocol = opts.protocol
+    if  opts.lfn:
+        lfn = opts.lfn
+    mgr = FWManager(opts.verbose)
+    mgr.getFiles(site, run, dataset, lfn, protocol)
+#    pfnList = mgr.getFiles(site, run, dataset, lfn, protocol)
+#    for pfn in pfnList:
+#        print pfn

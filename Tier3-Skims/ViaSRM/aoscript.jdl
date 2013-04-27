@@ -1,0 +1,14 @@
+JobName = "AOTransfer_1"; 
+JobType = "Normal"; 
+Executable = "copy-files-SRM-tmp-SRM.py";
+Arguments = "-f xag -d no";
+CPUTime = "";
+StdOutput = "std.out";
+StdError = "std.err";
+Owner = "aosorio"; 
+OutputSandbox = 
+       {"std.out",
+	"std.err"};
+OutputSE = ""; 
+InputSandbox = {"copy-files-SRM-tmp-SRM.py","xag"};
+

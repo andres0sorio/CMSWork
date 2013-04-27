@@ -1,0 +1,7 @@
+Executable = "test.sh"; 
+StdOutput = "salida.out"; 
+StdError = "salida.err"; 
+InputSandbox={"./test.sh"}; 
+OutputSandbox = {"salida.out","salida.err"}; 
+outputsandboxbasedesturi="gsiftp://localhost";
+

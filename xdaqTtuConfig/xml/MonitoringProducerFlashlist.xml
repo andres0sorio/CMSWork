@@ -1,0 +1,20 @@
+<?xml version='1.0'?>
+<mon:profile xmlns:mon="http://xdaq.web.cern.ch/xdaq/xsd/2005/Monitor-10">
+	<mon:settings>
+		<mon:collection>false</mon:collection>
+	</mon:settings>
+	<mon:flashlists>
+		<mon:flash name="producer">
+			<mon:item name="counter" infospace="urn:xdaq-monitorable:MonitoringProducer" type="unsigned long" />
+			<mon:item name="lastUpdated" infospace="urn:xdaq-monitorable:MonitoringProducer" type="string" />
+			<mon:item name="random" infospace="urn:xdaq-monitorable:MonitoringProducer" type="float" />
+		</mon:flash>
+		<mon:flash name="test">
+			<mon:item name="myTable" infospace="urn:xdaq-monitorable:Test" type="string" />
+		</mon:flash>
+	</mon:flashlists>
+	<mon:collectorsettings>
+		<mon:collect flashlist="producer" mode="all" every="00:00:00:00:05" history="false" range="00:00:00:01:00" persistent="false" file="/tmp/producer.txt" collect="true"/>
+		<mon:collect flashlist="test" mode="all" every="00:00:00:00:05" history="false" range="00:00:00:01:00" persistent="false" file="/tmp/processInfo.txt" collect="true"/>
+	</mon:collectorsettings>
+</mon:profile>

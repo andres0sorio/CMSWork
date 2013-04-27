@@ -1,0 +1,11 @@
+<use name="FWCore/Framework"/>
+<use name="FWCore/PluginManager"/>
+<use name="FWCore/ParameterSet"/>
+<use name="L1Trigger/GlobalTriggerAnalyzer"/>
+<use name="DataFormats/L1GlobalTrigger"/>
+<use name="DataFormats/FEDRawData"/>
+<use name="DataFormats/Common"/>
+<flags EDM_PLUGIN="1"/>
+<export>
+   <lib name="1"/>
+</export>

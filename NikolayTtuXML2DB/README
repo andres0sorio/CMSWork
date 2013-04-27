@@ -1,0 +1,8 @@
+May 07 2010
+This is Ttu XML handler: use to write to DB from XML and read back configuration for a specific RPC Local configuration KEY.
+
+- It is Nikolay's Tool but with a few modifications made by me (fixed bug #bits <- #bytes)
+- I also include the python scripts that interface its use
+
+Andres
+

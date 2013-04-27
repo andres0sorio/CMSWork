@@ -1,0 +1,21 @@
+VirtualOrganisation = "cms";
+Executable = "aoscript.csh";
+Requirements =
+   other.GlueCEUniqueID=="cmsosgce2.fnal.gov:2119/jobmanager-condor-default";
+MyProxyServer = "myproxy.cern.ch";
+StdError = "std.err";
+DataAccessProtocol = {
+   "gsiftp"
+};
+InputSandbox = {"/home/aosorio/Tier3-tests/0/aoscript.csh"};
+ShallowRetryCount = 10;
+PerusalFileEnable = false;
+RetryCount = 3;
+OutputSandbox = 
+       {"std.out",
+	"std.err",
+	"ascii.test.txt"
+};
+StdOutput = "std.out";
+JobType = "Normal"; 
+Arguments = "/dpm/uniandes.edu.co/home/cms/generated/2009-05-27/fileaf0e01e9-3ca8-4482-89cf-404c193752d9";

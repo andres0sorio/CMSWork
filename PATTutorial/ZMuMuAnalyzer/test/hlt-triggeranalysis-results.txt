@@ -1,0 +1,661 @@
+10-Feb-2009 18:13:19 CET  Initiating request to open file rfio:/castor/cern.ch/user/a/aosorio/Summer08/Summer08_Zmumu_GEN-SIM-RECO_IDEAL_V11_redigi_v1_0012_xx.root
+10-Feb-2009 18:13:35 CET  Successfully opened file rfio:/castor/cern.ch/user/a/aosorio/Summer08/Summer08_Zmumu_GEN-SIM-RECO_IDEAL_V11_redigi_v1_0012_xx.root
+HLTEventAnalyzerAOD configuration: 
+   ProcessName = HLT
+   TriggerName = @
+   TriggerResultsTag = TriggerResults::HLT
+   TriggerEventTag = hltTriggerSummaryAOD::HLT
+
+Begin processing the 1st record. Run 1, Event 19502, LumiSection 40 at 10-Feb-2009 18:13:41 CET
+HLTEventAnalyzerAOD::analyzeTrigger: path generation_step [0]
+ Trigger path status: WasRun=1 Accept=1 Error =0
+ Last active module - label/type: genMetIC5GenJets/METProducer [16 out of 0-16 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path simulation_step [1]
+ Trigger path status: WasRun=1 Accept=1 Error =0
+ Last active module - label/type: g4SimHits/OscarProducer [2 out of 0-2 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path digitisation_step [2]
+ Trigger path status: WasRun=1 Accept=1 Error =0
+ Last active module - label/type: mergedtruth/TrackingTruthProducer [15 out of 0-15 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path L1simulation_step [3]
+ Trigger path status: WasRun=1 Accept=1 Error =0
+ Last active module - label/type: simGtDigis/L1GlobalTrigger [10 out of 0-10 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path digi2raw_step [4]
+ Trigger path status: WasRun=1 Accept=1 Error =0
+ Last active module - label/type: rawDataCollector/RawDataCollectorModule [14 out of 0-14 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLTriggerFirstPath [5]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltBoolFirstPath/HLTBool [9 out of 0-10 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_L1Jet15 [6]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sL1Jet15/HLTLevel1GTSeed [7 out of 0-9 on this path]
+ 'L3' filter in slot 7 - label/type hltL1sL1Jet15/HLTLevel1GTSeed
+   0 accepted 'L3' objects found: 
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_Jet30 [7]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sJet30/HLTLevel1GTSeed [7 out of 0-26 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_Jet50 [8]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sJet50/HLTLevel1GTSeed [7 out of 0-26 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_Jet80 [9]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sJet80/HLTLevel1GTSeed [7 out of 0-24 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_Jet110 [10]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sJet110/HLTLevel1GTSeed [7 out of 0-24 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_Jet180 [11]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sJet180/HLTLevel1GTSeed [7 out of 0-24 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_Jet250 [12]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sJet250/HLTLevel1GTSeed [7 out of 0-24 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_FwdJet20 [13]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sFwdJet20/HLTLevel1GTSeed [7 out of 0-26 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DoubleJet150 [14]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sDoubleJet150/HLTLevel1GTSeed [7 out of 0-24 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DoubleJet125_Aco [15]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sDoubleJet125Aco/HLTLevel1GTSeed [7 out of 0-25 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DoubleFwdJet50 [16]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sDoubleFwdJet50/HLTLevel1GTSeed [7 out of 0-26 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DiJetAve15 [17]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sDiJetAve15/HLTLevel1GTSeed [7 out of 0-26 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DiJetAve30 [18]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sDiJetAve30/HLTLevel1GTSeed [7 out of 0-26 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DiJetAve50 [19]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sDiJetAve50/HLTLevel1GTSeed [7 out of 0-26 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DiJetAve70 [20]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sDiJetAve70/HLTLevel1GTSeed [7 out of 0-26 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DiJetAve130 [21]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sDiJetAve130/HLTLevel1GTSeed [7 out of 0-26 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DiJetAve220 [22]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sDiJetAve220/HLTLevel1GTSeed [7 out of 0-26 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_TripleJet85 [23]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sTripleJet85/HLTLevel1GTSeed [7 out of 0-24 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_QuadJet30 [24]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sQuadJet30/HLTLevel1GTSeed [7 out of 0-26 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_QuadJet60 [25]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sQuadJet60/HLTLevel1GTSeed [7 out of 0-26 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_SumET120 [26]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sSumET120/HLTLevel1GTSeed [7 out of 0-26 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_L1MET20 [27]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sL1MET20/HLTLevel1GTSeed [7 out of 0-9 on this path]
+ 'L3' filter in slot 7 - label/type hltL1sL1MET20/HLTLevel1GTSeed
+   0 accepted 'L3' objects found: 
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_MET25 [28]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sMET25/HLTLevel1GTSeed [7 out of 0-26 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_MET35 [29]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sMET35/HLTLevel1GTSeed [7 out of 0-26 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_MET50 [30]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sMET50/HLTLevel1GTSeed [7 out of 0-26 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_MET65 [31]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sMET65/HLTLevel1GTSeed [7 out of 0-26 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_MET75 [32]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sMET75/HLTLevel1GTSeed [7 out of 0-26 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_MET35_HT350 [33]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sMET35HT350/HLTLevel1GTSeed [7 out of 0-27 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_Jet180_MET60 [34]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sJet180MET60/HLTLevel1GTSeed [7 out of 0-27 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_Jet60_MET70_Aco [35]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sJet60MET70Aco/HLTLevel1GTSeed [7 out of 0-27 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_Jet100_MET60_Aco [36]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sJet100MET60Aco/HLTLevel1GTSeed [7 out of 0-28 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DoubleJet125_MET60 [37]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sDoubleJet125MET60/HLTLevel1GTSeed [7 out of 0-27 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DoubleFwdJet40_MET60 [38]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sDoubleFwdJet40MET60/HLTLevel1GTSeed [7 out of 0-27 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DoubleJet60_MET60_Aco [39]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sDoubleJet60MET60Aco/HLTLevel1GTSeed [7 out of 0-27 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DoubleJet50_MET70_Aco [40]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sDoubleJet50MET70Aco/HLTLevel1GTSeed [7 out of 0-27 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DoubleJet40_MET70_Aco [41]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sDoubleJet40MET70Aco/HLTLevel1GTSeed [7 out of 0-27 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_TripleJet60_MET60 [42]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sTripleJet60MET60/HLTLevel1GTSeed [7 out of 0-27 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_QuadJet35_MET60 [43]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sQuadJet35MET60/HLTLevel1GTSeed [7 out of 0-27 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_IsoEle15_L1I [44]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sSingleEgamma/HLTLevel1GTSeed [7 out of 0-48 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_IsoEle18_L1R [45]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sRelaxedSingleEgamma/HLTLevel1GTSeed [7 out of 0-66 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_IsoEle15_LW_L1I [46]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sSingleEgamma/HLTLevel1GTSeed [7 out of 0-48 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_LooseIsoEle15_LW_L1R [47]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sRelaxedSingleEgammaEt12/HLTLevel1GTSeed [7 out of 0-66 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_Ele10_SW_L1R [48]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sRelaxedSingleEgammaEt8/HLTLevel1GTSeed [7 out of 0-66 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_Ele15_SW_L1R [49]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sRelaxedSingleEgammaEt12/HLTLevel1GTSeed [7 out of 0-66 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_Ele15_LW_L1R [50]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sRelaxedSingleEgammaEt10/HLTLevel1GTSeed [7 out of 0-66 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_EM80 [51]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sRelaxedSingleEgamma/HLTLevel1GTSeed [7 out of 0-62 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_EM200 [52]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sRelaxedSingleEgamma/HLTLevel1GTSeed [7 out of 0-36 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DoubleIsoEle10_L1I [53]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sDoubleEgamma/HLTLevel1GTSeed [7 out of 0-48 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DoubleIsoEle12_L1R [54]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sRelaxedDoubleEgamma/HLTLevel1GTSeed [7 out of 0-66 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DoubleIsoEle10_LW_L1I [55]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sDoubleEgamma/HLTLevel1GTSeed [7 out of 0-48 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DoubleIsoEle12_LW_L1R [56]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sRelaxedDoubleEgamma/HLTLevel1GTSeed [7 out of 0-66 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DoubleEle5_SW_L1R [57]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sRelaxedDoubleEgammaEt5/HLTLevel1GTSeed [7 out of 0-66 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DoubleEle10_LW_OnlyPixelM_L1R [58]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sRelaxedDoubleEgammaEt5/HLTLevel1GTSeed [7 out of 0-50 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DoubleEle10_Z [59]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sDoubleEgamma/HLTLevel1GTSeed [7 out of 0-49 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DoubleEle6_Exclusive [60]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sExclusiveDoubleEgamma/HLTLevel1GTSeed [7 out of 0-48 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_IsoPhoton30_L1I [61]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sSingleEgamma/HLTLevel1GTSeed [7 out of 0-44 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_IsoPhoton10_L1R [62]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sRelaxedSingleEgammaEt8/HLTLevel1GTSeed [7 out of 0-59 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_IsoPhoton15_L1R [63]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sRelaxedSingleEgammaEt12/HLTLevel1GTSeed [7 out of 0-59 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_IsoPhoton20_L1R [64]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sRelaxedSingleEgammaEt15/HLTLevel1GTSeed [7 out of 0-59 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_IsoPhoton25_L1R [65]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sRelaxedSingleEgammaEt15/HLTLevel1GTSeed [7 out of 0-59 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_IsoPhoton40_L1R [66]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sRelaxedSingleEgamma/HLTLevel1GTSeed [7 out of 0-59 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_Photon15_L1R [67]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sRelaxedSingleEgammaEt10/HLTLevel1GTSeed [7 out of 0-59 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_Photon25_L1R [68]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sRelaxedSingleEgammaEt15/HLTLevel1GTSeed [7 out of 0-59 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DoubleIsoPhoton20_L1I [69]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sDoubleEgamma/HLTLevel1GTSeed [7 out of 0-45 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DoubleIsoPhoton20_L1R [70]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sRelaxedDoubleEgamma/HLTLevel1GTSeed [7 out of 0-60 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DoublePhoton10_Exclusive [71]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sExclusiveDoubleEgamma/HLTLevel1GTSeed [7 out of 0-44 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_L1Mu [72]
+ Trigger path status: WasRun=1 Accept=1 Error =0
+ Last active module - label/type: hltBoolEnd/HLTBool [10 out of 0-10 on this path]
+ 'L3' filter in slot 9 - label/type hltMuLevel1PathL1Filtered/HLTMuonL1Filter
+   2 accepted 'L3' objects found: 
+   0 81/10: 0 70 1.45 -0.829031 0.105658
+   1 81/11: 0 45 1.65 2.66163 0.105658
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_L1MuOpen [73]
+ Trigger path status: WasRun=1 Accept=1 Error =0
+ Last active module - label/type: hltBoolEnd/HLTBool [10 out of 0-10 on this path]
+ 'L3' filter in slot 9 - label/type hltMuLevel1PathL1OpenFiltered/HLTMuonL1Filter
+   2 accepted 'L3' objects found: 
+   0 81/10: 0 70 1.45 -0.829031 0.105658
+   1 81/11: 0 45 1.65 2.66163 0.105658
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_L2Mu9 [74]
+ Trigger path status: WasRun=1 Accept=1 Error =0
+ Last active module - label/type: hltBoolEnd/HLTBool [22 out of 0-22 on this path]
+ 'L3' filter in slot 21 - label/type hltSingleMuLevel2NoIsoL2PreFiltered/HLTMuonL2PreFilter
+   2 accepted 'L3' objects found: 
+   0 93/0: -13 48.8896 1.45164 -0.763772 0
+   1 93/1: 13 32.9659 1.63367 2.62552 9.53674e-07
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_IsoMu9 [75]
+ Trigger path status: WasRun=1 Accept=1 Error =0
+ Last active module - label/type: hltBoolEnd/HLTBool [49 out of 0-49 on this path]
+ 'L3' filter in slot 48 - label/type hltSingleMuIsoL3IsoFiltered9/HLTMuonIsoFilter
+   2 accepted 'L3' objects found: 
+   0 93/2: -13 54.6365 1.45582 -0.767102 0
+   1 93/3: 13 41.1705 1.62678 2.63131 1.3487e-06
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_IsoMu11 [76]
+ Trigger path status: WasRun=1 Accept=1 Error =0
+ Last active module - label/type: hltBoolEnd/HLTBool [49 out of 0-49 on this path]
+ 'L3' filter in slot 48 - label/type hltSingleMuIsoL3IsoFiltered/HLTMuonIsoFilter
+   2 accepted 'L3' objects found: 
+   0 93/2: -13 54.6365 1.45582 -0.767102 0
+   1 93/3: 13 41.1705 1.62678 2.63131 1.3487e-06
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_IsoMu13 [77]
+ Trigger path status: WasRun=1 Accept=1 Error =0
+ Last active module - label/type: hltBoolEnd/HLTBool [49 out of 0-49 on this path]
+ 'L3' filter in slot 48 - label/type hltSingleMuIsoL3IsoFiltered13/HLTMuonIsoFilter
+   2 accepted 'L3' objects found: 
+   0 93/2: -13 54.6365 1.45582 -0.767102 0
+   1 93/3: 13 41.1705 1.62678 2.63131 1.3487e-06
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_IsoMu15 [78]
+ Trigger path status: WasRun=1 Accept=1 Error =0
+ Last active module - label/type: hltBoolEnd/HLTBool [49 out of 0-49 on this path]
+ 'L3' filter in slot 48 - label/type hltSingleMuIsoL3IsoFiltered15/HLTMuonIsoFilter
+   2 accepted 'L3' objects found: 
+   0 93/2: -13 54.6365 1.45582 -0.767102 0
+   1 93/3: 13 41.1705 1.62678 2.63131 1.3487e-06
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_Mu3 [79]
+ Trigger path status: WasRun=1 Accept=1 Error =0
+ Last active module - label/type: hltBoolEnd/HLTBool [32 out of 0-32 on this path]
+ 'L3' filter in slot 31 - label/type hltSingleMuPrescale3L3PreFiltered/HLTMuonL3PreFilter
+   2 accepted 'L3' objects found: 
+   0 93/2: -13 54.6365 1.45582 -0.767102 0
+   1 93/3: 13 41.1705 1.62678 2.63131 1.3487e-06
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_Mu5 [80]
+ Trigger path status: WasRun=1 Accept=1 Error =0
+ Last active module - label/type: hltBoolEnd/HLTBool [32 out of 0-32 on this path]
+ 'L3' filter in slot 31 - label/type hltSingleMuPrescale5L3PreFiltered/HLTMuonL3PreFilter
+   2 accepted 'L3' objects found: 
+   0 93/2: -13 54.6365 1.45582 -0.767102 0
+   1 93/3: 13 41.1705 1.62678 2.63131 1.3487e-06
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_Mu7 [81]
+ Trigger path status: WasRun=1 Accept=1 Error =0
+ Last active module - label/type: hltBoolEnd/HLTBool [32 out of 0-32 on this path]
+ 'L3' filter in slot 31 - label/type hltSingleMuPrescale77L3PreFiltered/HLTMuonL3PreFilter
+   2 accepted 'L3' objects found: 
+   0 93/2: -13 54.6365 1.45582 -0.767102 0
+   1 93/3: 13 41.1705 1.62678 2.63131 1.3487e-06
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_Mu9 [82]
+ Trigger path status: WasRun=1 Accept=1 Error =0
+ Last active module - label/type: hltBoolEnd/HLTBool [32 out of 0-32 on this path]
+ 'L3' filter in slot 31 - label/type hltSingleMuNoIsoL3PreFiltered9/HLTMuonL3PreFilter
+   2 accepted 'L3' objects found: 
+   0 93/2: -13 54.6365 1.45582 -0.767102 0
+   1 93/3: 13 41.1705 1.62678 2.63131 1.3487e-06
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_Mu11 [83]
+ Trigger path status: WasRun=1 Accept=1 Error =0
+ Last active module - label/type: hltBoolEnd/HLTBool [32 out of 0-32 on this path]
+ 'L3' filter in slot 31 - label/type hltSingleMuNoIsoL3PreFiltered11/HLTMuonL3PreFilter
+   2 accepted 'L3' objects found: 
+   0 93/2: -13 54.6365 1.45582 -0.767102 0
+   1 93/3: 13 41.1705 1.62678 2.63131 1.3487e-06
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_Mu13 [84]
+ Trigger path status: WasRun=1 Accept=1 Error =0
+ Last active module - label/type: hltBoolEnd/HLTBool [32 out of 0-32 on this path]
+ 'L3' filter in slot 31 - label/type hltSingleMuNoIsoL3PreFiltered13/HLTMuonL3PreFilter
+   2 accepted 'L3' objects found: 
+   0 93/2: -13 54.6365 1.45582 -0.767102 0
+   1 93/3: 13 41.1705 1.62678 2.63131 1.3487e-06
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_Mu15 [85]
+ Trigger path status: WasRun=1 Accept=1 Error =0
+ Last active module - label/type: hltBoolEnd/HLTBool [32 out of 0-32 on this path]
+ 'L3' filter in slot 31 - label/type hltSingleMuNoIsoL3PreFiltered15/HLTMuonL3PreFilter
+   2 accepted 'L3' objects found: 
+   0 93/2: -13 54.6365 1.45582 -0.767102 0
+   1 93/3: 13 41.1705 1.62678 2.63131 1.3487e-06
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_Mu15_L1Mu7 [86]
+ Trigger path status: WasRun=1 Accept=1 Error =0
+ Last active module - label/type: hltBoolEnd/HLTBool [32 out of 0-32 on this path]
+ 'L3' filter in slot 31 - label/type hltSingleMuNoIsoL3PreFiltered/HLTMuonL3PreFilter
+   2 accepted 'L3' objects found: 
+   0 93/2: -13 54.6365 1.45582 -0.767102 0
+   1 93/3: 13 41.1705 1.62678 2.63131 1.3487e-06
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_Mu15_Vtx2cm [87]
+ Trigger path status: WasRun=1 Accept=1 Error =0
+ Last active module - label/type: hltBoolEnd/HLTBool [32 out of 0-32 on this path]
+ 'L3' filter in slot 31 - label/type hltSingleMuNoIsoL3PreFilteredRelaxedVtx2cm/HLTMuonL3PreFilter
+   2 accepted 'L3' objects found: 
+   0 93/2: -13 54.6365 1.45582 -0.767102 0
+   1 93/3: 13 41.1705 1.62678 2.63131 1.3487e-06
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_Mu15_Vtx2mm [88]
+ Trigger path status: WasRun=1 Accept=1 Error =0
+ Last active module - label/type: hltBoolEnd/HLTBool [32 out of 0-32 on this path]
+ 'L3' filter in slot 31 - label/type hltSingleMuNoIsoL3PreFilteredRelaxedVtx2mm/HLTMuonL3PreFilter
+   2 accepted 'L3' objects found: 
+   0 93/2: -13 54.6365 1.45582 -0.767102 0
+   1 93/3: 13 41.1705 1.62678 2.63131 1.3487e-06
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DoubleIsoMu3 [89]
+ Trigger path status: WasRun=1 Accept=1 Error =0
+ Last active module - label/type: hltBoolEnd/HLTBool [49 out of 0-49 on this path]
+ 'L3' filter in slot 48 - label/type hltDiMuonIsoL3IsoFiltered/HLTMuonIsoFilter
+   2 accepted 'L3' objects found: 
+   0 93/2: -13 54.6365 1.45582 -0.767102 0
+   1 93/3: 13 41.1705 1.62678 2.63131 1.3487e-06
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DoubleMu3 [90]
+ Trigger path status: WasRun=1 Accept=1 Error =0
+ Last active module - label/type: hltBoolEnd/HLTBool [32 out of 0-32 on this path]
+ 'L3' filter in slot 31 - label/type hltDiMuonNoIsoL3PreFiltered/HLTMuonL3PreFilter
+   2 accepted 'L3' objects found: 
+   0 93/2: -13 54.6365 1.45582 -0.767102 0
+   1 93/3: 13 41.1705 1.62678 2.63131 1.3487e-06
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DoubleMu3_Vtx2cm [91]
+ Trigger path status: WasRun=1 Accept=1 Error =0
+ Last active module - label/type: hltBoolEnd/HLTBool [32 out of 0-32 on this path]
+ 'L3' filter in slot 31 - label/type hltDiMuonNoIsoL3PreFilteredRelaxedVtx2cm/HLTMuonL3PreFilter
+   2 accepted 'L3' objects found: 
+   0 93/2: -13 54.6365 1.45582 -0.767102 0
+   1 93/3: 13 41.1705 1.62678 2.63131 1.3487e-06
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DoubleMu3_Vtx2mm [92]
+ Trigger path status: WasRun=1 Accept=1 Error =0
+ Last active module - label/type: hltBoolEnd/HLTBool [32 out of 0-32 on this path]
+ 'L3' filter in slot 31 - label/type hltDiMuonNoIsoL3PreFilteredRelaxedVtx2mm/HLTMuonL3PreFilter
+   2 accepted 'L3' objects found: 
+   0 93/2: -13 54.6365 1.45582 -0.767102 0
+   1 93/3: 13 41.1705 1.62678 2.63131 1.3487e-06
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DoubleMu3_JPsi [93]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltJpsiMML2Filtered/HLTMuonDimuonL2Filter [21 out of 0-32 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DoubleMu3_Upsilon [94]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltUpsilonMML2Filtered/HLTMuonDimuonL2Filter [21 out of 0-32 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DoubleMu7_Z [95]
+ Trigger path status: WasRun=1 Accept=1 Error =0
+ Last active module - label/type: hltBoolEnd/HLTBool [32 out of 0-32 on this path]
+ 'L3' filter in slot 31 - label/type hltZMML3Filtered/HLTMuonDimuonL3Filter
+   2 accepted 'L3' objects found: 
+   0 93/2: -13 54.6365 1.45582 -0.767102 0
+   1 93/3: 13 41.1705 1.62678 2.63131 1.3487e-06
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DoubleMu3_SameSign [96]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltSameSignMuL2PreFiltered/HLTMuonDimuonL2Filter [21 out of 0-32 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DoubleMu3_Psi2S [97]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltPsi2SMML2Filtered/HLTMuonDimuonL2Filter [21 out of 0-32 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_BTagIP_Jet180 [98]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sBLifetime/HLTLevel1GTSeed [7 out of 0-49 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_BTagIP_Jet120_Relaxed [99]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sBLifetimeLowEnergy/HLTLevel1GTSeed [7 out of 0-49 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_BTagIP_DoubleJet120 [100]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sBLifetime/HLTLevel1GTSeed [7 out of 0-49 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_BTagIP_DoubleJet60_Relaxed [101]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sBLifetimeLowEnergy/HLTLevel1GTSeed [7 out of 0-49 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_BTagIP_TripleJet70 [102]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sBLifetime/HLTLevel1GTSeed [7 out of 0-49 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_BTagIP_TripleJet40_Relaxed [103]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sBLifetimeLowEnergy/HLTLevel1GTSeed [7 out of 0-49 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_BTagIP_QuadJet40 [104]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sBLifetime/HLTLevel1GTSeed [7 out of 0-49 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_BTagIP_QuadJet30_Relaxed [105]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sBLifetimeLowEnergy/HLTLevel1GTSeed [7 out of 0-49 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_BTagIP_HT470 [106]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sBLifetime/HLTLevel1GTSeed [7 out of 0-49 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_BTagIP_HT320_Relaxed [107]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sBLifetimeLowEnergy/HLTLevel1GTSeed [7 out of 0-49 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_BTagMu_DoubleJet120 [108]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sBSoftmuonNjet/HLTLevel1GTSeed [7 out of 0-52 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_BTagMu_DoubleJet60_Relaxed [109]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sBSoftmuonNjet/HLTLevel1GTSeed [7 out of 0-52 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_BTagMu_TripleJet70 [110]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sBSoftmuonNjet/HLTLevel1GTSeed [7 out of 0-52 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_BTagMu_TripleJet40_Relaxed [111]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sBSoftmuonNjet/HLTLevel1GTSeed [7 out of 0-52 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_BTagMu_QuadJet40 [112]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sBSoftmuonNjet/HLTLevel1GTSeed [7 out of 0-52 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_BTagMu_QuadJet30_Relaxed [113]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sBSoftmuonNjet/HLTLevel1GTSeed [7 out of 0-52 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_BTagMu_HT370 [114]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sBSoftMuonHT/HLTLevel1GTSeed [7 out of 0-52 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_BTagMu_HT250_Relaxed [115]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sBSoftmuonHTLowEnergy/HLTLevel1GTSeed [7 out of 0-52 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DoubleMu3_BJPsi [116]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltDisplacedJpsitoMumuFilterRelaxed/HLTDisplacedmumuFilter [32 out of 0-33 on this path]
+ 'L3' filter in slot 32 - label/type hltDisplacedJpsitoMumuFilterRelaxed/HLTDisplacedmumuFilter
+   0 accepted 'L3' objects found: 
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DoubleMu4_BJPsi [117]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltDisplacedJpsitoMumuFilter/HLTDisplacedmumuFilter [32 out of 0-33 on this path]
+ 'L3' filter in slot 32 - label/type hltDisplacedJpsitoMumuFilter/HLTDisplacedmumuFilter
+   0 accepted 'L3' objects found: 
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_TripleMu3_TauTo3Mu [118]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltDisplacedMuMukFilter/HLTDisplacedmumuFilter [32 out of 0-45 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_IsoTau_MET65_Trk20 [119]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sSingleTau/HLTLevel1GTSeed [7 out of 0-53 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_IsoTau_MET35_Trk15_L1MET [120]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sSingleTauMET/HLTLevel1GTSeed [7 out of 0-53 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_LooseIsoTau_MET30 [121]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sSingleTau/HLTLevel1GTSeed [7 out of 0-35 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_LooseIsoTau_MET30_L1MET [122]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sSingleTauMET/HLTLevel1GTSeed [7 out of 0-35 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DoubleIsoTau_Trk3 [123]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sDoubleTau/HLTLevel1GTSeed [7 out of 0-44 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_DoubleLooseIsoTau [124]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sDoubleTauRelaxed/HLTLevel1GTSeed [7 out of 0-33 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_IsoEle8_IsoMu7 [125]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sIsoEgMu/HLTLevel1GTSeed [7 out of 0-88 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_IsoEle10_Mu10_L1R [126]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sEgMuNonIso/HLTLevel1GTSeed [7 out of 0-89 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_IsoEle12_IsoTau_Trk3 [127]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sElectronTau/HLTLevel1GTSeed [7 out of 0-80 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_IsoEle10_BTagIP_Jet35 [128]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sElectronB/HLTLevel1GTSeed [7 out of 0-105 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_IsoEle12_Jet40 [129]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sEJet/HLTLevel1GTSeed [7 out of 0-63 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_IsoEle12_DoubleJet80 [130]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sEJet/HLTLevel1GTSeed [7 out of 0-63 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_IsoEle5_TripleJet30 [131]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sEJet30/HLTLevel1GTSeed [7 out of 0-63 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_IsoEle12_TripleJet60 [132]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sEJet/HLTLevel1GTSeed [7 out of 0-63 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_IsoEle12_QuadJet35 [133]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sEJet/HLTLevel1GTSeed [7 out of 0-63 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_IsoMu14_IsoTau_Trk3 [134]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sMuonTau/HLTLevel1GTSeed [7 out of 0-86 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_IsoMu7_BTagIP_Jet35 [135]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sMuB/HLTLevel1GTSeed [7 out of 0-88 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_IsoMu7_BTagMu_Jet20 [136]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sMuB/HLTLevel1GTSeed [7 out of 0-91 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_IsoMu7_Jet40 [137]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sMuJets/HLTLevel1GTSeed [7 out of 0-64 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_NoL2IsoMu8_Jet40 [138]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sMuNoL2IsoJets/HLTLevel1GTSeed [7 out of 0-50 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_Mu14_Jet50 [139]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sMuNoIsoJets/HLTLevel1GTSeed [7 out of 0-47 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_Mu5_TripleJet30 [140]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sMuNoIsoJets30/HLTLevel1GTSeed [7 out of 0-47 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_BTagMu_Jet20_Calib [141]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sBSoftmuonNjet/HLTLevel1GTSeed [7 out of 0-52 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_ZeroBias [142]
+ Trigger path status: WasRun=1 Accept=1 Error =0
+ Last active module - label/type: hltBoolEnd/HLTBool [9 out of 0-9 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_MinBias [143]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sMinBias/HLTLevel1GTSeed [7 out of 0-9 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_MinBiasHcal [144]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sMinBiasHcal/HLTLevel1GTSeed [7 out of 0-9 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_MinBiasEcal [145]
+ Trigger path status: WasRun=1 Accept=1 Error =0
+ Last active module - label/type: hltBoolEnd/HLTBool [9 out of 0-9 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_MinBiasPixel [146]
+ Trigger path status: WasRun=1 Accept=1 Error =0
+ Last active module - label/type: hltBoolEnd/HLTBool [15 out of 0-15 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_MinBiasPixel_Trk5 [147]
+ Trigger path status: WasRun=1 Accept=1 Error =0
+ Last active module - label/type: hltBoolEnd/HLTBool [15 out of 0-15 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_BackwardBSC [148]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sBackwardBSC/HLTLevel1GTSeed [7 out of 0-9 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_ForwardBSC [149]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sForwardBSC/HLTLevel1GTSeed [7 out of 0-9 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_CSCBeamHalo [150]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sCSCBeamHalo/HLTLevel1GTSeed [7 out of 0-9 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_CSCBeamHaloOverlapRing1 [151]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sCSCBeamHaloOverlapRing1/HLTLevel1GTSeed [7 out of 0-12 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_CSCBeamHaloOverlapRing2 [152]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sCSCBeamHaloOverlapRing2/HLTLevel1GTSeed [7 out of 0-12 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_CSCBeamHaloRing2or3 [153]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sCSCBeamHaloRing2or3/HLTLevel1GTSeed [7 out of 0-12 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLT_TrackerCosmics [154]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sTrackerCosmics/HLTLevel1GTSeed [7 out of 0-9 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path AlCa_IsoTrack [155]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sAlCaIsoTrack/HLTLevel1GTSeed [7 out of 0-19 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path AlCa_EcalPhiSym [156]
+ Trigger path status: WasRun=1 Accept=1 Error =0
+ Last active module - label/type: hltBoolEnd/HLTBool [13 out of 0-13 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path AlCa_EcalPi0 [157]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltL1sAlCaEcalPi0/HLTLevel1GTSeed [7 out of 0-17 on this path]
+HLTEventAnalyzerAOD::analyzeTrigger: path HLTriggerFinalPath [158]
+ Trigger path status: WasRun=1 Accept=0 Error =0
+ Last active module - label/type: hltBoolFinalPath/HLTBool [4 out of 0-4 on this path]
+
+
+TriggerSummaryAnalyzerAOD: content of TriggerEvent: hltTriggerSummaryAOD
+Used Processname: HLT
+Number of packed Collections: 10
+The Collections: #, tag, 1-past-end index
+0 hltL2MuonCandidates::HLT 2
+1 hltL3MuonCandidates::HLT 4
+2 hltMuTracks::HLT 6
+3 hltL1extraParticles:Isolated:HLT 10
+4 hltL1extraParticles:NonIsolated:HLT 10
+5 hltL1extraParticles::HLT 12
+6 hltL1extraParticles:Central:HLT 12
+7 hltL1extraParticles:Forward:HLT 12
+8 hltL1extraParticles:Tau:HLT 12
+9 hltL1extraParticles::HLT 13
+Number of TriggerObjects: 13
+The TriggerObjects: #, id, pt, eta, phi, mass
+0 -13 48.8896 1.45164 -0.763772 0
+1 13 32.9659 1.63367 2.62552 9.53674e-07
+2 -13 54.6365 1.45582 -0.767102 0
+3 13 41.1705 1.62678 2.63131 1.3487e-06
+4 13 56.0305 1.4557 -0.767158 0.10566
+5 13 50.3515 1.62658 2.63212 0.10566
+6 0 2 1.566 -0.698132 0
+7 0 1 -1.566 -1.74533 0
+8 0 1 -1.956 -1.39626 0
+9 0 1 -2.586 -1.39626 0
+10 0 70 1.45 -0.829031 0.105658
+11 0 45 1.65 2.66163 0.105658
+12 0 6 0 3.01069 0
+Number of TriggerFilters: 26
+The Filters: #, tag, #ids/#keys, the id/key pairs
+0 hltDiMuonIsoL3IsoFiltered::HLT 2/2 the pairs:  93/2 93/3
+1 hltDiMuonNoIsoL3PreFiltered::HLT 2/2 the pairs:  93/2 93/3
+2 hltDiMuonNoIsoL3PreFilteredRelaxedVtx2cm::HLT 2/2 the pairs:  93/2 93/3
+3 hltDiMuonNoIsoL3PreFilteredRelaxedVtx2mm::HLT 2/2 the pairs:  93/2 93/3
+4 hltDisplacedJpsitoMumuFilter::HLT 0/0 the pairs: 
+5 hltDisplacedJpsitoMumuFilterRelaxed::HLT 0/0 the pairs: 
+6 hltL1sL1Jet15::HLT 0/0 the pairs: 
+7 hltL1sL1MET20::HLT 0/0 the pairs: 
+8 hltMuLevel1PathL1Filtered::HLT 2/2 the pairs:  81/10 81/11
+9 hltMuLevel1PathL1OpenFiltered::HLT 2/2 the pairs:  81/10 81/11
+10 hltSingleMuIsoL3IsoFiltered::HLT 2/2 the pairs:  93/2 93/3
+11 hltSingleMuIsoL3IsoFiltered13::HLT 2/2 the pairs:  93/2 93/3
+12 hltSingleMuIsoL3IsoFiltered15::HLT 2/2 the pairs:  93/2 93/3
+13 hltSingleMuIsoL3IsoFiltered9::HLT 2/2 the pairs:  93/2 93/3
+14 hltSingleMuLevel2NoIsoL2PreFiltered::HLT 2/2 the pairs:  93/0 93/1
+15 hltSingleMuNoIsoL3PreFiltered::HLT 2/2 the pairs:  93/2 93/3
+16 hltSingleMuNoIsoL3PreFiltered11::HLT 2/2 the pairs:  93/2 93/3
+17 hltSingleMuNoIsoL3PreFiltered13::HLT 2/2 the pairs:  93/2 93/3
+18 hltSingleMuNoIsoL3PreFiltered15::HLT 2/2 the pairs:  93/2 93/3
+19 hltSingleMuNoIsoL3PreFiltered9::HLT 2/2 the pairs:  93/2 93/3
+20 hltSingleMuNoIsoL3PreFilteredRelaxedVtx2cm::HLT 2/2 the pairs:  93/2 93/3
+21 hltSingleMuNoIsoL3PreFilteredRelaxedVtx2mm::HLT 2/2 the pairs:  93/2 93/3
+22 hltSingleMuPrescale3L3PreFiltered::HLT 2/2 the pairs:  93/2 93/3
+23 hltSingleMuPrescale5L3PreFiltered::HLT 2/2 the pairs:  93/2 93/3
+24 hltSingleMuPrescale77L3PreFiltered::HLT 2/2 the pairs:  93/2 93/3
+25 hltZMML3Filtered::HLT 2/2 the pairs:  93/2 93/3
+
+10-Feb-2009 18:13:44 CET  Closed file rfio:/castor/cern.ch/user/a/aosorio/Summer08/Summer08_Zmumu_GEN-SIM-RECO_IDEAL_V11_redigi_v1_0012_xx.root
+
+=============================================
+
+MessageLogger Summary
+
+ type     category        sev    module        subroutine        count    total
+ ---- -------------------- -- ---------------- ----------------  -----    -----
+    1 fileAction           -s PoolSource:sourc                       2        2
+    2 fileAction           -s PostModule                             1        1
+
+ type    category    Examples: run/evt        run/evt          run/evt
+ ---- -------------------- ---------------- ---------------- ----------------
+    1 fileAction           pre-events       pre-events       
+    2 fileAction           1/19502                           
+
+Severity    # Occurrences   Total Occurrences
+--------    -------------   -----------------
+System                  3                   3

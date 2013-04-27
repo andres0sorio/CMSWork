@@ -1,0 +1,4 @@
+this is the integration package: it is verified with respected to Mathematica
+- the dsigma/dy in equations 5 and 7 are parametrized following Juan Carlos approximative method based
+on reference paper: 5.76 exp (-y) * sigmaCC
+

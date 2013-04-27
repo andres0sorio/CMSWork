@@ -1,0 +1,6 @@
+VirtualOrganisation = "cms";
+Nodes = {
+[NodeName = "gsj_0"; file="/home/aosorio/Tier3-tests/0/aoscript_0.jdl";],
+[NodeName = "gsj_1"; file="/home/aosorio/Tier3-tests/1/aoscript_1.jdl";]
+};
+Type = "collection";

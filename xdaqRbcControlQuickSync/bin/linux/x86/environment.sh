@@ -1,0 +1,12 @@
+export LD_LIBRARY_PATH
+export LD_LIBRARY_PATH="./:$XDAQ_ROOT/daq/xdaq/lib/linux/x86/:$XDAQ_ROOT/daq/extern/xerces/linuxx86/lib:$LD_LIBRARY_PATH"
+export LD_LIBRARY_PATH="$XDAQ_ROOT/daq/toolbox/lib/linux/x86/:$LD_LIBRARY_PATH"
+export LD_LIBRARY_PATH="$XDAQ_ROOT/daq/xoap/lib/linux/x86/:$LD_LIBRARY_PATH"
+export LD_LIBRARY_PATH="$XDAQ_ROOT/daq/pt/lib/linux/x86/:$LD_LIBRARY_PATH"
+export LD_LIBRARY_PATH="$XDAQ_ROOT/daq/extern/log4cplus/linuxx86/lib:$LD_LIBRARY_PATH"
+export LD_LIBRARY_PATH="$XDAQ_ROOT/daq/extern/cgicc/linuxx86/lib:$LD_LIBRARY_PATH"
+export LD_LIBRARY_PATH="$XDAQ_ROOT/daq/xdata/lib/linux/x86/:$LD_LIBRARY_PATH"
+export LD_LIBRARY_PATH="$XDAQ_ROOT/daq/xcept/lib/linux/x86/:$LD_LIBRARY_PATH"
+export LD_LIBRARY_PATH="$XDAQ_ROOT/daq/xgi/lib/linux/x86/:$LD_LIBRARY_PATH"
+export LD_LIBRARY_PATH="$XDAQ_ROOT/daq/i2o/lib/linux/x86/:$LD_LIBRARY_PATH"
+export LD_LIBRARY_PATH="$XDAQ_ROOT/daq/extern/log4cplus/udpappender/lib/linux/x86:$LD_LIBRARY_PATH"

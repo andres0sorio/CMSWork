@@ -1,0 +1,42 @@
+......................................................
+
+RBC-TTU emulator: CMSSW independent code for testing
+......................................................
+
+author: Andres Osorio
+October 2008
+
+...............................
+
+* directories:
+doc: documentation (doxygen)
+interfaces: interfaces declaration
+src: source
+exe: executables + testfiles
+
+* Compilation
+
+To compile this code, make sure you hve ROOT installed and its environment set. On lxplus, you can set it up by issuing
+the command "cmsenv". This version of the emulator doesn't need ROOT but I wanted to have it in hand (or at least some sort
+of framework behind).
+
+From there it is pretty easy: 
+% cd src
+% make
+
+* Running:
+
+% cd exe
+% ./emulate testdata-2.txt TestLogic
+
+
+Where testdata-2.txt is some data and TestLogic is the selected Logic.
+
+* Documentation
+
+You need to have Doxygen and Graphviz installed
+
+% cd doc
+% doxygen config
+
+

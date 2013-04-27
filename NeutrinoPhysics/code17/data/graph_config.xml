@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE TGraphFromXML PUBLIC "" "graph_config.dtd" []>
+<TGraphFromXML>
+  <DataSets Id="1" Name="set1" Marker="22" Colour="1" Size="1.0">
+    <Point Id="1" x="1" y="2" xelow="0.0" xeup="0.0" yelow="0.0" yeup="0.0" />
+    <Point Id="2" x="2" y="4" xelow="0.0" xeup="0.0" yelow="0.0" yeup="0.0"/>
+  </DataSets>
+  <DataSets Id="2" Name="set2" Marker="22" Colour="2" Size="1.0">
+    <Point Id="1" x="1" y="1" xelow="0.0" xeup="0.0" yelow="0.0" yeup="0.0"/>
+    <Point Id="2" x="2" y="2" xelow="0.0" xeup="0.0" yelow="0.0" yeup="0.0"/>
+  </DataSets>
+</TGraphFromXML>

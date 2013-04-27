@@ -1,0 +1,18 @@
+<?xml version='1.0'?>
+<xc:Partition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xc="http://xdaq.web.cern.ch/xdaq/xsd/2004/XMLConfiguration-30">
+
+    	<xc:Context url="http://lxcmd102:1972">
+		
+                <xc:Application class="XRelaySender" id="50" instance="0" network="local"/>
+		<xc:Module>${XDAQ_ROOT}/daq/examples/lib/${XDAQ_OS}/${XDAQ_PLATFORM}/libXRelaySender.so</xc:Module>
+
+        </xc:Context>
+
+    	<xc:Context url="http://lxcmd102:1973">
+                <xc:Application class="XRelaySender" id="51" instance="0" network="local"/>
+		<xc:Module>${XDAQ_ROOT}/daq/examples/lib/${XDAQ_OS}/${XDAQ_PLATFORM}/libXRelaySender.so</xc:Module>
+
+        </xc:Context>
+
+
+</xc:Partition>

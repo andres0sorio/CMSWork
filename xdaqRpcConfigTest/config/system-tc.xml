@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system>
+	<crate type="vme" id="100" desc="VME Crate">
+		<vme interface="CAEN" unit="2 0" />
+		<board type="tcsort" id="110" addr="c" desc="TC SORT" />
+		<!-- <board type="tb2" id="1200" addr="1" desc="TB 2">
+			<chip type="opto" id="1201" pos="2" desc="OPTO1" />
+			<chip type="opto" id="1202" pos="3" desc="OPTO2" />
+			<chip type="opto" id="1203" pos="4" desc="OPTO3" />
+			<chip type="opto" id="1204" pos="5" desc="OPTO4" />
+			<chip type="opto" id="1205" pos="6" desc="OPTO5" />
+			<chip type="opto" id="1206" pos="7" desc="OPTO6" />
+			<chip type="ldpac" id="1207" pos="8" desc="PAC1" />
+			<chip type="ldpac" id="1208" pos="9" desc="PAC2" />
+			<chip type="ldpac" id="1209" pos="A" desc="PAC3" />
+			<chip type="ldpac" id="1210" pos="B" desc="PAC4" />
+			<chip type="rmb" id="1211" pos="F" desc="RMB"/>
+			<chip type="gbsort" id="1212" pos="1" desc="SORT" />
+		</board>--> 
+		 <board type="tb2" id="1300" addr="5" desc="TB 2">
+			<chip type="opto" id="1301" pos="2" desc="OPTO1" />
+			<chip type="opto" id="1302" pos="3" desc="OPTO2" />
+			<chip type="opto" id="1303" pos="4" desc="OPTO3" />
+			<chip type="opto" id="1304" pos="5" desc="OPTO4" />
+			<chip type="opto" id="1305" pos="6" desc="OPTO5" />
+			<chip type="opto" id="1306" pos="7" desc="OPTO6" />
+			<chip type="ldpac" id="1307" pos="8" desc="PAC1" />
+			<chip type="ldpac" id="1308" pos="9" desc="PAC2" />
+			<!--<chip type="ldpac" id="1309" pos="A" desc="PAC3" />
+			<chip type="ldpac" id="1310" pos="B" desc="PAC4" />-->
+			<!--<chip type="gbsort" id="1312" pos="1" desc="SORT" />-->
+		</board>
+		<!--board type="hsb" id="1900" addr="7" desc="HSB" /-->
+	</crate>
+</system>

@@ -1,0 +1,65 @@
+#!/bin/sh
+
+# chkconfig: 3 90 10
+# description: ELOG is a weblog with integrated database
+# processname: elogd
+# config: /usr/local/elog/elogd.cfg
+# pidfile: /var/run/elogd.pid
+
+ELOGD="/usr/local/sbin/elogd"
+ELOGDIR="/home/heplab/elog"
+HOSTNAME=`hostname`
+
+# Check for the config file
+if [ ! -f $ELOGDIR/elogd.cfg ]; then
+    exit 0
+fi
+
+# See how we were called.
+case "$1" in
+  start)
+        if [ -f $ELOGDIR/elogd-$HOSTNAME.pid ] ; then
+	   pid=`cat ./elogd-$HOSTNAME.pid`
+	   if [ -d /proc/$pid ] ; then
+	     echo "elogd already running"
+	     exit 1
+	   fi
+	fi
+####################################
+# The full path *must* be specified
+	echo "Starting elogd: "
+	$ELOGD -f $ELOGDIR/elogd-$HOSTNAME.pid -p 8080 -c $ELOGDIR/elogd.cfg -D  > /dev/null 2>&1 &
+	RETVAL=$?
+        if [ $RETVAL -eq 0  ] ; then 
+          echo "elog started" 
+        else
+          echo "Failed to start elog"
+        fi
+	echo
+	;;
+  stop)
+     echo ""
+      if [ -f $ELOGDIR/elogd-$HOSTNAME.pid ] ; then
+        echo "Stopping elogd: "
+        kill `cat $ELOGDIR/elogd-$HOSTNAME.pid`
+	rm -f $ELOGDIR/elogd-$HOSTNAME.pid
+        echo "elog stopped"
+        echo
+     else
+        echo "No elogd running?"
+	echo "Failed to start elog"
+	echo
+     fi
+     
+	;;
+  restart|reload)
+	$0 stop
+	$0 start
+	;;
+  *)
+	echo "Usage: $0 {start|stop|restart}"
+	exit 1
+esac
+
+exit 0
+

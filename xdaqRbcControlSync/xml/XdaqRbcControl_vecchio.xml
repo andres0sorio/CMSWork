@@ -1,0 +1,12 @@
+<?xml version='1.0'?>
+<xc:Partition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xc="http://xdaq.web.cern.ch/xdaq/xsd/2004/XMLConfiguration-30">
+	
+	<xc:Context id="0" url="http://pcrpct03:1973">
+		<xc:Application class="XdaqRbcControl" id="7201" instance="0" network="local">
+		</xc:Application>
+		
+		<xc:Module>${XDAQ_ROOT}/lib/linux/x86/libxdaqrbccontrol.so</xc:Module>
+	</xc:Context>
+	
+</xc:Partition>

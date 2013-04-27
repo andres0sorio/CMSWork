@@ -1,0 +1,21 @@
+GLITE_LOCATION, gLite middleware installation directory
+GLITE_SD_PLUGIN, Sets the type of service discovery implementation to be used (file, bdii, rgma)
+GLITE_SD_SITE, Sets the local site where to find services 
+GLITE_SD_VO, Sets the default VO for which to find services 
+GLITE_WMS_CLIENT_CONFIG, Non-standard location of the gLite WMProxy UI configuration file
+GLITE_WMSUI_CONFIG_VAR, Non-standard location of the gLite WMS UI configuration file 
+GLITE_WMSUI_CONFIG_VO, Non-standard location of the VO-specific gLite WMS UI configuration file
+GLOBUS_LOCATION, Globus middleware installation directory
+LCG_CATALOG_TYPE, Type of file catalogue used by lcg util and GFAL (it should be lfc)
+LCG_GFAL_INFOSYS, comma-separated list of BDII contact strings for lcg utils and GFAL (<hostname>:<port>)
+LCG_GFAL_VO, User’s VO for lcg utils and GFAL 
+LFC_HOST, Location of the LFC catalogue
+LCG_LOCATION_LCG, middleware installation directory
+LCG_RFIO_TYPE, Type of RFIO for GFAL (dpm or castor)
+VO_CMS_DEFAULT_SE, Default SE for the VO <VO>
+VO_CMS_SW_DIR, <VO>’s software installation directory
+X509_CERT_DIR, Directory containing the CA certificates
+X509_USER_CERT, User’s certificate file
+X509_USER_KEY, User’s private key file
+X509_USER_PROXY, User’s proxy certificate file
+X509_VOMS_DIR, Directory containing the certificates of the VOMS servers

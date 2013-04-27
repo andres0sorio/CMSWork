@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system>
+	<crate type="vme" id="100" desc="VME Crate">
+		<vme interface="CAEN" unit="1 0" />
+		<board type="hsb" id="1900" addr="4" desc="HSB 4" />
+		<board type="hsb" id="2000" addr="6" desc="HSB 6" />
+		<board type="fsb" id="2100" addr="2" desc="FSB 2" />
+	</crate>
+</system>

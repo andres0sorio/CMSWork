@@ -1,0 +1,2 @@
+TTUBoardConfig PKey number runId number runType number triggerMode number Firmware number LengthOfFiber number MaxNumWheels number Delay number Wheel1 number Wheel2 number LogicType varchar(40) MaskedSector number ForcedSector number
+RBCBoardConfig PKey number Firmware number WheelId number Latency number MayorityLevel number LogicType varchar(40) MaskedOrInput number ForcedOrInput number

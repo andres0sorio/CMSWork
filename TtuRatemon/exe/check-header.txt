@@ -1,0 +1,215 @@
+- Hibernate Annotations 3.3.0.GA
+- Hibernate 3.2.4
+- hibernate.properties not found
+- Bytecode provider name : cglib
+- using JDK 1.4 java.sql.Timestamp handling
+- configuring from file: hibernate.cfg.xml
+- Configured SessionFactory: null
+- Binding entity from annotated class: rpct.db.domain.equipment.Crate
+- Bind entity rpct.db.domain.equipment.Crate on table Crate
+- Binding entity from annotated class: rpct.db.domain.equipment.ControlCrate
+- Binding entity from annotated class: rpct.db.domain.equipment.LinkBox
+- Binding entity from annotated class: rpct.db.domain.equipment.TriggerCrate
+- Binding entity from annotated class: rpct.db.domain.equipment.SorterCrate
+- Binding entity from annotated class: rpct.db.domain.equipment.BoardBoardConn
+- Bind entity rpct.db.domain.equipment.BoardBoardConn on table BOARDBOARDCONN
+- Binding entity from annotated class: rpct.db.domain.equipment.LinkConn
+- Bind entity rpct.db.domain.equipment.LinkConn on table LINKTBCONN
+- Binding entity from annotated class: rpct.db.domain.equipment.RbcTtuConn
+- Bind entity rpct.db.domain.equipment.RbcTtuConn on table RBCTTUCONN
+- Binding entity from annotated class: rpct.db.domain.equipment.Board
+- Bind entity rpct.db.domain.equipment.Board on table Board
+- Binding entity from annotated class: rpct.db.domain.equipment.LinkBoard
+- Bind entity rpct.db.domain.equipment.LinkBoard on table LinkBoard
+- Binding entity from annotated class: rpct.db.domain.equipment.controlboard.ControlBoard
+- Bind entity rpct.db.domain.equipment.controlboard.ControlBoard on table ControlBoard
+- Binding entity from annotated class: rpct.db.domain.equipment.TcBackplane
+- Bind entity rpct.db.domain.equipment.TcBackplane on table TcBackplane
+- Binding entity from annotated class: rpct.db.domain.equipment.TriggerBoard
+- Bind entity rpct.db.domain.equipment.TriggerBoard on table TriggerBoard
+- Binding entity from annotated class: rpct.db.domain.equipment.TtuBoard
+- Bind entity rpct.db.domain.equipment.TtuBoard on table TtuBoard
+- Binding entity from annotated class: rpct.db.domain.equipment.RbcBoard
+- Bind entity rpct.db.domain.equipment.RbcBoard on table RbcBoard
+- Binding entity from annotated class: rpct.db.domain.equipment.SorterBoard
+- Bind entity rpct.db.domain.equipment.SorterBoard on table SorterBoard
+- Binding entity from annotated class: rpct.db.domain.equipment.DccBoard
+- Bind entity rpct.db.domain.equipment.DccBoard on table DccBoard
+- Binding entity from annotated class: rpct.db.domain.equipment.FebBoard
+- Bind entity rpct.db.domain.equipment.FebBoard on table FebBoard
+- Binding entity from annotated class: rpct.db.domain.equipment.feblocation.FebLocation
+- Bind entity rpct.db.domain.equipment.feblocation.FebLocation on table FebLocation
+- Binding entity from annotated class: rpct.db.domain.equipment.ccsboard.CcsBoard
+- Bind entity rpct.db.domain.equipment.ccsboard.CcsBoard on table CcsBoard
+- Binding entity from annotated class: rpct.db.domain.equipment.chamberloaction.ChamberLocation
+- Bind entity rpct.db.domain.equipment.chamberloaction.ChamberLocation on table CHAMBERLOCATION
+- Binding entity from annotated class: rpct.db.domain.equipment.chambertype.ChamberType
+- Bind entity rpct.db.domain.equipment.chambertype.ChamberType on table CHAMBERTYPE
+- Binding entity from annotated class: rpct.db.domain.equipment.distributionboard.DistributionBoard
+- Bind entity rpct.db.domain.equipment.distributionboard.DistributionBoard on table DISTRIBUTIONBOARD
+- Binding entity from annotated class: rpct.db.domain.equipment.FebConnector
+- Bind entity rpct.db.domain.equipment.FebConnector on table FebConnector
+- Binding entity from annotated class: rpct.db.domain.equipment.I2cCbChannel
+- Bind entity rpct.db.domain.equipment.I2cCbChannel on table I2cCbChannel
+- Binding entity from annotated class: rpct.db.domain.equipment.Chip
+- Bind entity rpct.db.domain.equipment.Chip on table Chip
+- Binding entity from annotated class: rpct.db.domain.configuration.XdaqExecutive
+- Bind entity rpct.db.domain.configuration.XdaqExecutive on table XdaqExecutive
+- Binding entity from annotated class: rpct.db.domain.configuration.XdaqApplication
+- Bind entity rpct.db.domain.configuration.XdaqApplication on table XdaqApplication
+- Binding entity from annotated class: rpct.db.domain.configuration.XdaqAppLBoxAccess
+- Bind entity rpct.db.domain.configuration.XdaqAppLBoxAccess on table XdaqAppLBoxAccess
+- Binding entity from annotated class: rpct.db.domain.configuration.XdaqAppVmeCrateAccess
+- Bind entity rpct.db.domain.configuration.XdaqAppVmeCrateAccess on table XdaqAppVmeCrateAccess
+- Binding entity from annotated class: rpct.db.domain.equipment.chamberstrip.ChamberStrip
+- Bind entity rpct.db.domain.equipment.chamberstrip.ChamberStrip on table CHAMBERSTRIP
+- Binding entity from annotated class: rpct.db.domain.condition.StripResponse
+- Bind entity rpct.db.domain.condition.StripResponse on table STRIPRESPONSE
+- Binding entity from annotated class: rpct.db.domain.condition.FebCondition
+- Bind entity rpct.db.domain.condition.FebCondition on table FebCondition
+- Binding entity from annotated class: rpct.db.domain.configuration.LocalConfigKey
+- Bind entity rpct.db.domain.configuration.LocalConfigKey on table LocalConfigKey
+- Binding entity from annotated class: rpct.db.domain.configuration.ConfigKeyAssignment
+- Bind entity rpct.db.domain.configuration.ConfigKeyAssignment on table ConfigKeyAssignment
+- Binding entity from annotated class: rpct.db.domain.configuration.CurrentConfigKey
+- Bind entity rpct.db.domain.configuration.CurrentConfigKey on table CURRENTCONFIGKEY
+- Binding entity from annotated class: rpct.db.domain.configuration.ChipConfAssignment
+- Bind entity rpct.db.domain.configuration.ChipConfAssignment on table ChipConfAssignment
+- Binding entity from annotated class: rpct.db.domain.configuration.StaticConfiguration
+- Bind entity rpct.db.domain.configuration.StaticConfiguration on table StaticConfiguration
+- Binding entity from annotated class: rpct.db.domain.configuration.SynCoderConf
+- Bind entity rpct.db.domain.configuration.SynCoderConf on table LINKCHIPCONF
+- Binding entity from annotated class: rpct.db.domain.configuration.PacConf
+- Bind entity rpct.db.domain.configuration.PacConf on table TBPACCONF
+- Binding entity from annotated class: rpct.db.domain.configuration.TbGbSortConf
+- Bind entity rpct.db.domain.configuration.TbGbSortConf on table TBGBSORTCONF
+- Binding entity from annotated class: rpct.db.domain.configuration.RmbConf
+- Bind entity rpct.db.domain.configuration.RmbConf on table TBRMBCONF
+- Binding entity from annotated class: rpct.db.domain.configuration.TcSortConf
+- Bind entity rpct.db.domain.configuration.TcSortConf on table TCSORTCONF
+- Binding entity from annotated class: rpct.db.domain.configuration.HalfSortConf
+- Bind entity rpct.db.domain.configuration.HalfSortConf on table HALFSORTCONF
+- Binding entity from annotated class: rpct.db.domain.configuration.RbcConf
+- Bind entity rpct.db.domain.configuration.RbcConf on table RBCCHIPCONF
+- Binding entity from annotated class: rpct.db.domain.configuration.TtuTrigConf
+- Bind entity rpct.db.domain.configuration.TtuTrigConf on table TTUTRIGCONF
+- Binding entity from annotated class: rpct.db.domain.configuration.TtuFinalConf
+- Bind entity rpct.db.domain.configuration.TtuFinalConf on table TTUFINALCONF
+- Binding entity from annotated class: rpct.db.domain.configuration.FebConf
+- Bind entity rpct.db.domain.configuration.FebConf on table FEBCHIPCONF
+- Binding entity from annotated class: rpct.db.domain.configuration.ChipDisabled
+- Bind entity rpct.db.domain.configuration.ChipDisabled on table ChipDisabled
+- Binding entity from annotated class: rpct.db.domain.configuration.BoardDisabled
+- Bind entity rpct.db.domain.configuration.BoardDisabled on table BoardDisabled
+- Binding entity from annotated class: rpct.db.domain.configuration.CrateDisabled
+- Bind entity rpct.db.domain.configuration.CrateDisabled on table CrateDisabled
+- Binding entity from annotated class: rpct.db.domain.configuration.LinkDisabled
+- Bind entity rpct.db.domain.configuration.LinkDisabled on table LinkDisabled
+- Binding entity from annotated class: rpct.db.domain.configuration.IntArray18
+- Bind entity rpct.db.domain.configuration.IntArray18 on table IntArray18
+- Binding entity from annotated class: rpct.db.domain.configuration.IntArray16
+- Bind entity rpct.db.domain.configuration.IntArray16 on table IntArray16
+- Binding entity from annotated class: rpct.db.domain.configuration.IntArray9
+- Bind entity rpct.db.domain.configuration.IntArray9 on table IntArray9
+- Binding entity from annotated class: rpct.db.domain.configuration.IntArray4
+- Bind entity rpct.db.domain.configuration.IntArray4 on table IntArray4
+- Binding entity from annotated class: rpct.db.domain.configuration.IntArray6
+- Bind entity rpct.db.domain.configuration.IntArray6 on table IntArray6
+- Binding entity from annotated class: rpct.db.domain.configuration.IntArray12
+- Bind entity rpct.db.domain.configuration.IntArray12 on table IntArray12
+- Binding entity from annotated class: rpct.db.domain.configuration.IntArray24
+- Bind entity rpct.db.domain.configuration.IntArray24 on table IntArray24
+- Mapping collection: rpct.db.domain.equipment.Crate.boards -> Board
+- Mapping collection: rpct.db.domain.equipment.Board.chips -> Chip
+- Mapping collection: rpct.db.domain.equipment.Board.connsAsBoard -> BOARDBOARDCONN
+- Mapping collection: rpct.db.domain.equipment.Board.connsAsCollectorBoard -> BOARDBOARDCONN
+- Mapping collection: rpct.db.domain.equipment.LinkBoard.FEBLocations -> FebLocation
+- Mapping collection: rpct.db.domain.equipment.LinkBoard.slaves -> LinkBoard
+- Mapping collection: rpct.db.domain.equipment.RbcBoard.slaves -> RbcBoard
+- Mapping collection: rpct.db.domain.equipment.feblocation.FebLocation.febConnectors -> FebConnector
+- Mapping collection: rpct.db.domain.equipment.ccsboard.CcsBoard.controlBoards -> ControlBoard
+- Mapping collection: rpct.db.domain.equipment.chamberloaction.ChamberLocation.FEBLocations -> FebLocation
+- Mapping collection: rpct.db.domain.equipment.chambertype.ChamberType.chamberLocations -> CHAMBERLOCATION
+- Mapping collection: rpct.db.domain.equipment.FebConnector.chamberStrips -> CHAMBERSTRIP
+- Mapping collection: rpct.db.domain.equipment.I2cCbChannel.FEBLocations -> FebLocation
+- Mapping collection: rpct.db.domain.equipment.I2cCbChannel.febBoards -> FebBoard
+- Mapping collection: rpct.db.domain.configuration.XdaqExecutive.xdaqApplications -> XdaqApplication
+- Hibernate Validator 3.0.0.GA
+- Using Hibernate built-in connection pool (not for production use!)
+- Hibernate connection pool size: 20
+- autocommit mode: false
+- using driver: oracle.jdbc.driver.OracleDriver at URL: jdbc:oracle:thin:@
+            (DESCRIPTION =
+                (ADDRESS = (PROTOCOL = TCP)(HOST = cmsonr1-v)(PORT =10121))
+                (ADDRESS = (PROTOCOL = TCP)(HOST = cmsonr2-v)(PORT =10121))
+                (ADDRESS = (PROTOCOL = TCP)(HOST = cmsonr3-v)(PORT =10121))
+                (ADDRESS = (PROTOCOL = TCP)(HOST = cmsonr4-v)(PORT =10121))
+                (ADDRESS = (PROTOCOL = TCP)(HOST = cmsonr5-v)(PORT =10121))
+                (ADDRESS = (PROTOCOL = TCP)(HOST = cmsonr6-v)(PORT =10121))
+                (ENABLE=BROKEN)
+                (LOAD_BALANCE = yes)
+                (CONNECT_DATA =
+                    (SERVER = DEDICATED)
+                    (SERVICE_NAME = cms_omds_lb.cern.ch)
+                    (FAILOVER_MODE = (TYPE = SELECT)(METHOD = BASIC)(RETRIES = 200)(DELAY= 15))
+                )
+            )
+- connection properties: {user=CMS_RPC_CONF, password=****}
+- RDBMS: Oracle, version: Oracle Database 10g Enterprise Edition Release 10.2.0.4.0 - 64bit Production
+With the Partitioning, Real Application Clusters, OLAP, Data Mining
+and Real Application Testing options
+- JDBC driver: Oracle JDBC driver, version: 10.2.0.3.0
+- Using dialect: org.hibernate.dialect.OracleDialect
+- Using default transaction strategy (direct JDBC transactions)
+- No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+- Automatic flush during beforeCompletion(): disabled
+- Automatic session close at end of transaction: disabled
+- JDBC batch size: 15
+- JDBC batch updates for versioned data: disabled
+- Scrollable result sets: enabled
+- JDBC3 getGeneratedKeys(): disabled
+- Connection release mode: auto
+- Default batch fetch size: 1
+- Generate SQL with comments: disabled
+- Order SQL updates by primary key: disabled
+- Order SQL inserts for batching: disabled
+- Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+- Using ASTQueryTranslatorFactory
+- Query language substitutions: {}
+- JPA-QL strict compliance: disabled
+- Second-level cache: enabled
+- Query cache: disabled
+- Cache provider: org.hibernate.cache.NoCacheProvider
+- Optimize cache for minimal puts: disabled
+- Structured second-level cache entries: disabled
+- Statistics: disabled
+- Deleted entity synthetic identifier rollback: disabled
+- Default entity-mode: pojo
+- Named query checking : enabled
+- building session factory
+- Not binding factory to JNDI, no JNDI name configured
+- Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+linesCnt= 4, checkBitsCnt = 2, linesPerSplot=2, checkBitsPerLine=1
+, splotsCnt= 2, linesInLastSplot = 2, checkBitsInLastLine = 1
+dataBitsCntForLine [I@cb1edc
+dataBitsOffsetForLine [I@1570f5c
+- Duplicate element with name = VME
+- Duplicate element with name = CR
+- Duplicate element with name = TTUOPTO 2
+- Duplicate element with name = TTUOPTO 3
+- Duplicate element with name = TTUOPTO 4
+- Duplicate element with name = TTUOPTO 5
+- Duplicate element with name = TTUOPTO 6
+- Duplicate element with name = TTUOPTO 7
+- Duplicate element with name = TTUTRIG 8
+- Duplicate element with name = TTUTRIG 9
+- Duplicate element with name = VME
+- Duplicate element with name = CR
+- Duplicate element with name = TTUOPTO 2
+- Duplicate element with name = TTUOPTO 3
+- Duplicate element with name = TTUOPTO 4
+- Duplicate element with name = TTUOPTO 5
+- Duplicate element with name = TTUOPTO 6
+- Duplicate element with name = TTUOPTO 7
+- Duplicate element with name = TTUTRIG 8
+- Duplicate element with name = TTUTRIG 9

@@ -1,0 +1,13 @@
+programa para calcular los flujos de neutrinos en las fuentes en funcion de los parametros de mezcla.
+viajando en el vacio
+
+-> es el mismo codigo de code9 pero en esta oportunidad se ha adicionado una clase base IProbabilityMatrix
+
+para tener mas posibiliades de implementar otros modelos
+
+
+----usando ublas (from boostlibraries) para manipular matrices
+
+
+
+

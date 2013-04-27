@@ -1,0 +1,4 @@
+java -cp rpct-db.jar rpct.synch.TcLVDSSynchronizerPulser2 SC
+
+java -cp rpct-db.jar rpct.synch.XMLParametrsWriter SC
+

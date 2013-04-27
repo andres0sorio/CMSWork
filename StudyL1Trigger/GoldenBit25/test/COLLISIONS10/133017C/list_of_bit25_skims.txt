@@ -1,0 +1,9 @@
+/castor/cern.ch/user/a/aosorio/gridfiles/ganga/TTUSkims/133017C/TTUSkim_bit25_133017C_0.root
+/castor/cern.ch/user/a/aosorio/gridfiles/ganga/TTUSkims/133017C/TTUSkim_bit25_133017C_1.root
+/castor/cern.ch/user/a/aosorio/gridfiles/ganga/TTUSkims/133017C/TTUSkim_bit25_133017C_2.root
+/castor/cern.ch/user/a/aosorio/gridfiles/ganga/TTUSkims/133017C/TTUSkim_bit25_133017C_3.root
+/castor/cern.ch/user/a/aosorio/gridfiles/ganga/TTUSkims/133017C/TTUSkim_bit25_133017C_4.root
+/castor/cern.ch/user/a/aosorio/gridfiles/ganga/TTUSkims/133017C/TTUSkim_bit25_133017C_5.root
+/castor/cern.ch/user/a/aosorio/gridfiles/ganga/TTUSkims/133017C/TTUSkim_bit25_133017C_6.root
+/castor/cern.ch/user/a/aosorio/gridfiles/ganga/TTUSkims/133017C/TTUSkim_bit25_133017C_7.root
+/castor/cern.ch/user/a/aosorio/gridfiles/ganga/TTUSkims/133017C/TTUSkim_bit25_133017C_8.root

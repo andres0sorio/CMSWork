@@ -1,0 +1,24 @@
+
+include $(XDAQ_ROOT)/config/Makefile.rules
+
+#install: _buildall	
+#ifdef StaticLibrary
+#	$(Print) Installing static library
+#	$(MakeDir) ${InstallLibDir}
+#	$(Copy) $(StaticLibraryName) ${InstallLibDir}
+#endif
+#ifdef DynamicLibrary
+#	$(Print) Installing dynamic library.
+#	$(MakeDir) ${InstallLibDir}
+#	$(Copy) $(DynamicLibraryName) ${InstallLibDir}
+#endif
+#ifdef Executables
+#	$(Print) Installing executable binaries.
+#	$(MakeDir) ${InstallBinDir}
+#	$(Copy) $(PackageBinDir)/*.exe ${InstallBinDir}
+#endif
+
+
+BIN_PATTERNS := *.so *.a *.exe
+cleanBinary:	
+	$(foreach PAT, $(BIN_PATTERNS), find . -name $(PAT) -exec rm {} \; ;)

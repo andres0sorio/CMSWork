@@ -1,0 +1,18 @@
+<?xml version='1.0'?>
+<xc:Partition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xc="http://xdaq.web.cern.ch/xdaq/xsd/2004/XMLConfiguration-30">
+
+    	<xc:Context url="http://lxcmd101:1972">
+		
+                <xc:Application class="SimpleSOAPSender" id="50" instance="0" network="local"/>
+		<xc:Module>${XDAQ_ROOT}/daq/examples/lib/linux/x86/libSimpleSOAPSender.so</xc:Module>
+
+        </xc:Context>
+
+    	<xc:Context url="http://lxcmd102:1972">
+                <xc:Application class="SimpleSOAPReceiver" id="51" instance="0" network="local"/>
+		<xc:Module>${XDAQ_ROOT}/daq/examples/lib/linux/x86/libSimpleSOAPReceiver.so</xc:Module>
+
+        </xc:Context>
+
+
+</xc:Partition>

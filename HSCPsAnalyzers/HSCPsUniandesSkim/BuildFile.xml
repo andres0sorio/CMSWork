@@ -1,0 +1,17 @@
+<use name="boost"/>
+<use name="FWCore/Framework"/>
+<use name="FWCore/PluginManager"/>
+<use name="FWCore/ParameterSet"/>
+<use name="FWCore/ServiceRegistry"/>
+<use name="FWCore/Services"/>
+<use name="FWCore/MessageLogger"/>
+<use name="HLTrigger/HLTcore"/>
+<use name="L1Trigger/GlobalTriggerAnalyzer"/>
+<use name="CondCore/DBOutputService"/>
+<use name="CondFormats/HLTObjects"/>
+<use name="CondFormats/DataRecord"/>
+<use name="DataFormats/Common"/>
+<flags EDM_PLUGIN="1"/>
+<export>
+   <lib name="1"/>
+</export>

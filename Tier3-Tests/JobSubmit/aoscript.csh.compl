@@ -1,0 +1,55 @@
+#!/bin/csh -f
+#..................................................
+#.. Andres Osorio - aosorio@uniandes.edu.co        
+
+if ( $#argv != 1 ) then
+   echo "usage: $0 filepath"
+   goto done
+endif
+
+##set sehost="neuza"
+##set sehost="moboro"
+##if ( $DPM_HOST != "${sehost}.uniandes.edu.co") then
+##    echo "changing DPM host"
+##    setenv DPM_HOST ${sehost}.uniandes.edu.co
+##    setenv DPNS_HOST ${sehost}.uniandes.edu.co
+##endif
+
+echo "--------"
+
+set fpath=$1
+
+echo "--------"
+
+echo "${fpath}"
+rfdir ${fpath}
+
+echo "--------"
+
+echo "${fpath}"
+rfcat ${fpath}
+
+echo "--------"
+
+#..................................................
+echo "Default environment"
+env
+
+echo "---End--"
+
+#..................................................
+
+done:
+  exit 0
+error:
+  exit 1
+
+##setenv CSEC_TRACE 1
+#setenv LFC_HOST prod-lfc-cms-central.cern.ch
+#setenv LCG_GFAL_INFOSYS exp-bdii.cern.ch:2170
+#setenv LCG_CATALOG_TYPE lfc
+#lfc-ls /grid
+#set fpath=/dpm/uniandes.edu.co/home/cms/generated/2009-05-27/fileaf0e01e9-3ca8-4482-89cf-404c193752d9
+#set fpath=/dpm/brunel.ac.uk/home/cms/generated/2009-05-31/filed432e322-1b91-448d-9353-adf6172dc5e6
+#set fpath=/dpm/phy.bris.ac.uk/home/cms/generated/2009-05-31/fileadb6ce9d-9ae1-4521-ab4a-5e0e0d000d4f
+#set fpath=/dpm/cat.cbpf.br/home/cms/generated/2009-05-31/file0ac3b113-07b3-4598-84b5-0a63b87bdb21

@@ -1,0 +1,14 @@
+this is the integration package: it is verified with respected to Mathematica
+- the dsigma/dy in equations 5 and 7 are parametrized following Juan Carlos approximative method based
+on reference paper: 5.76 exp (-y) * sigmaCC
+
+Latest: 
+   New dsigma_dy parametrization: 
+
+October 26 2010: results are in synch with JC and Karla. Problem with R vs alfa plot. under investigation
+
+
+
+
+
+

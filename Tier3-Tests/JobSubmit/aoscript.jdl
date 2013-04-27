@@ -1,0 +1,14 @@
+JobName = "AOTest_1"; 
+JobType = "Normal"; 
+Executable = "aoscript.csh";
+Arguments = "/dpm/uniandes.edu.co/home/cms/";
+CPUTime = "";
+StdOutput = "std.out";
+StdError = "std.err";
+Owner = "aosorio"; 
+OutputSandbox = 
+       {"std.out",
+	"std.err"};
+OutputSE = ""; 
+InputSandbox = {"aoscript.csh"};
+

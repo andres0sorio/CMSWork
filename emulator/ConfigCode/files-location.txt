@@ -1,0 +1,14 @@
+RPCTechTriggerConfig.h CondFormats/RPCObjects/interface
+RBCBoardSpecs.h CondFormats/RPCObjects/interface
+TTUBoardSpecs.h CondFormats/RPCObjects/interface
+RBCBoardSpecs.cc CondFormats/RPCObjects/src
+TTUBoardSpecs.cc CondFormats/RPCObjects/src
+T_EventSetup_RBCBoardSpecs.cc CondFormats/RPCObjects/src
+T_EventSetup_TTUBoardSpecs.cc CondFormats/RPCObjects/src
+classes_def.xml CondFormats/RPCObjects/src
+classes.h CondFormats/RPCObjects/src
+RBCBoardSpecsRcd.h CondFormats/DataRecord/interface
+RBCBoardSpecsRcd.cc CondFormats/DataRecord/src
+TTUBoardSpecsRcd.h CondFormats/DataRecord/interface
+TTUBoardSpecsRcd.cc CondFormats/DataRecord/src
+plugin.cc CondCore/RPCPlugins/src

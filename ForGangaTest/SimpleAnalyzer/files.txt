@@ -1,0 +1,3 @@
+/opt/CMS/data/PrivateMC/Cosmic08/reco_CosmicMC_BOFF_2110.root
+/opt/CMS/data/PrivateMC/Cosmic08/reco_CosmicMC_BOFF_2120.root
+/opt/CMS/data/PrivateMC/Cosmic08/reco_CosmicMC_BOFF_2130.root

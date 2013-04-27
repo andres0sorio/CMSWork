@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system>
+  <crate type="vme" id="1000" desc="VME Crate">
+	<!--<board type="tcsort" id="110"  addr="3" desc="TC SORT"/>-->
+	<board type="trg" id="1200"  addr="1" desc="TB">
+		<chip type="opto" id="1202" pos="2" desc="OPTO1"/>
+		<chip type="opto" id="1203" pos="3" desc="OPTO2"/>
+		<chip type="opto" id="1204" pos="4" desc="OPTO3"/>
+		<chip type="opto" id="1205" pos="5" desc="OPTO4"/>
+		<chip type="opto" id="1206" pos="6" desc="OPTO5"/>
+		<chip type="opto" id="1207" pos="7" desc="OPTO6"/>
+		<chip type="ldpac" id="1208" pos="8" desc="PAC1"/>
+		<!--chip type="ldpac" id="1209" pos="9" desc="PAC2"/>-->
+		<chip type="ldpac" id="1210" pos="a" desc="PAC3"/>
+		<!--chip type="ldpac" id="1211" pos="b" desc="PAC4"/>-->
+		<!--chip type="ldpac" id="1212" pos="c" desc="PAC5"/>-->
+		<!--chip type="gbsort" id="1201" pos="1" desc="GBSORT"/>-->
+	</board>
+	
+  </crate>
+  
+</system>

@@ -1,0 +1,74 @@
+#CAEN_DIR = $(XDAQ_ROOT)
+#TS_HOME=$(BUILD_HOME)
+    
+IncludeDirs += \
+	$(BUILD_HOME)/rpct/.. \
+	$(BUILD_HOME)/rpct \
+	$(BUILD_HOME)/rpct/include \
+	$(BUILD_HOME)/rpct/tbstd/include \
+	$(BUILD_HOME)/rpct/ii/include \
+	$(BUILD_HOME)/rpct/diag/include \
+	$(BUILD_HOME)/rpct/devices/include \
+	$(BUILD_HOME)/rpct/devices/vhdl \
+	$(BUILD_HOME)/rpct/aboot2 \
+	$(BUILD_HOME)/rpct/i2c/include \
+	$(BUILD_HOME)/rpct/util \
+	$(BUILD_HOME)/rpct/ttccontr \
+	$(BUILD_HOME)/rpct/lboxAccess/include \
+	$(BUILD_HOME)/rpct/RPCCCU/include \
+	$(BUILD_HOME)/rpct/rpctXdata/include \
+	$(BUILD_HOME)/rpct/xdaqUtils/include \
+	$(BUILD_HOME)/rpct/xdaqIIAccess/include \
+	$(BUILD_HOME)/rpct/xdaqDiagAccess/include \
+	$(BUILD_HOME)/rpct/hardwareTests/include \
+	$(CAEN_DIR)/include \
+	$(XDAQ_ROOT)/daq/extern/xerces/$(XDAQ_OS)$(XDAQ_PLATFORM)/include \
+	$(XDAQ_ROOT)/daq/extern/log4cplus/$(XDAQ_OS)$(XDAQ_PLATFORM)/include \
+	$(XDAQ_ROOT)/daq/extern/cgicc/$(XDAQ_OS)$(XDAQ_PLATFORM)/include \
+	$(XDAQ_ROOT)/daq/toolbox/include \
+	$(XDAQ_ROOT)/daq/toolbox/include/$(XDAQ_OS) \
+	$(XDAQ_ROOT)/daq/xoap/include \
+	$(XDAQ_ROOT)/daq/xdata/include \
+	$(XDAQ_ROOT)/daq/pt/include \
+	$(XDAQ_ROOT)/daq/xcept/include \
+	$(XDAQ_ROOT)/daq/xgi/include \
+	$(XDAQ_ROOT)/daq/ \
+	$(TS_HOME)/trigger/ts/extern/chartdir/ChartDirector/include \
+	$(XDAQ_ROOT)/daq/extern/i2o/include/ \
+	$(XDAQ_ROOT)/daq/extern/i2o/include/i2o \
+	$(XDAQ_ROOT)/daq/extern/i2o/include/i2o/shared \
+	$(XDAQ_ROOT)/daq/xdaq/include \
+	$(XDAQ_ROOT)/daq/xdaq/include/solaris \
+	$(XDAQ_ROOT)/daq/xdaq/include/linux \
+	$(XDAQ_ROOT)/daq/hal/generic/include \
+	$(XDAQ_ROOT)/daq/hal/generic/include/linux \
+	$(XDAQ_ROOT)/daq/hal/busAdapter/include
+
+#InstallBinDir = ${HOME}/bin
+#InstallLibDir = $(BUILD_HOME)/${XDAQ_PLATFORM}/lib
+
+#LibraryDirs += \
+	${InstallLibDir} \
+	$(DEVICEDRIVERPATH) \
+	/usr/local/lib \
+	$(XDAQ_ROOT)/lib \
+    $(BUILD_HOME/${XDAQ_PLATFORM}/lib
+    
+#RootLibs = \
+     $(ROOTSYS)/lib/libAfterImage.a $(ROOTSYS)/lib/libASImageGui.so $(ROOTSYS)/lib/libASImage.so  \
+     $(ROOTSYS)/lib/libCore.so $(ROOTSYS)/lib/libCint.so $(ROOTSYS)/lib/libCintex.so $(ROOTSYS)/lib/libNew.so $(ROOTSYS)/lib/libGed.so $(ROOTSYS)/lib/libGeomPainter.so $(ROOTSYS)/lib/libGeom.so $(ROOTSYS)/lib/libGpad.so $(ROOTSYS)/lib/libGQt.so \
+     $(ROOTSYS)/lib/libGui.so $(ROOTSYS)/lib/libGuiBld.so $(ROOTSYS)/lib/libGX11.so $(ROOTSYS)/lib/libGX11TTF.so $(ROOTSYS)/lib/libGraf.so $(ROOTSYS)/lib/libGraf3d.so $(ROOTSYS)/lib/libHist.so $(ROOTSYS)/lib/libHistPainter.so \
+     $(ROOTSYS)/lib/libMatrix.so $(ROOTSYS)/lib/libMinuit.so $(ROOTSYS)/lib/libPostscript.so $(ROOTSYS)/lib/libTree.so $(ROOTSYS)/lib/libTreePlayer.so $(ROOTSYS)/lib/libTreeViewer.so \
+     $(ROOTSYS)/lib/libRint.so $(ROOTSYS)/lib/libRGL.so $(ROOTSYS)/lib/libSPlot.so $(ROOTSYS)/lib/libX3d.so $(ROOTSYS)/lib/libEG.so
+
+#UserSourcePath += \
+	$(BUILD_HOME)/rpct/bs/jp_22/source 
+
+#UserCFlags  += -DBT1003 -D_DEBUG -DTB_DEBUG -DLINUX -g -fmessage-length=0
+#UserCCFlags += -DBT1003 -D_DEBUG -DLINUX -g -fmessage-length=0
+#UserExecutableLinkFlags += -g
+
+
+#Libraries += tbstd rpcti2c pthread CAENLinuxBusAdapter CAENVME
+#Libraries += xerces-c xoap xerces-c  xoap xdata xgi peer toolbox xcept log4cplus logudpappender logxmlappender cgicc mimetic asyncresolv uuid
+

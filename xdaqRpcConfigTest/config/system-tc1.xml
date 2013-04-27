@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system>
+	<crate type="vme" id="100" desc="VME Crate">
+		<vme interface="CAEN" unit="0 1" />
+		<board type="tb2" id="1200" addr="1" desc="TB 2">
+			<chip type="opto" id="1201" pos="2" desc="OPTO1" />
+			<chip type="opto" id="1202" pos="3" desc="OPTO2" />
+			<chip type="opto" id="1203" pos="4" desc="OPTO3" />
+			<chip type="opto" id="1204" pos="5" desc="OPTO4" />
+			<chip type="opto" id="1205" pos="6" desc="OPTO5" />
+			<chip type="opto" id="1206" pos="7" desc="OPTO6" />
+			<chip type="ldpac" id="1207" pos="8" desc="PAC1" />
+			<chip type="ldpac" id="1208" pos="9" desc="PAC2" />
+			<chip type="ldpac" id="1209" pos="10" desc="PAC3" />
+			<chip type="ldpac" id="1210" pos="11" desc="PAC4" />
+			<chip type="rmb" id="1211" pos="12" desc="RMB"/>
+			<chip type="gbsort" id="1212" pos="1" desc="SORT" />
+		</board>
+	</crate>
+</system>

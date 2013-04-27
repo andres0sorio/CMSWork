@@ -1,0 +1,17 @@
+<use name=FWCore/Framework>
+<use name=FWCore/PluginManager>
+<use name=FWCore/ParameterSet>
+<use name=DataFormats/HepMCCandidate>
+<use name=SimDataFormats/GeneratorProducts>
+<use name=SimDataFormats/TrackingHit>
+<use name=DataFormats/GeometrySurface>
+<use name=DataFormats/GeometryVector>
+<use name=DataFormats/DTDigi>
+<use name=Geometry/DTGeometry>
+<use name=Geometry/Records>
+<use name=hepmc>
+<flags EDM_PLUGIN=1>
+<use name=CommonTools/UtilAlgos>
+<export>
+   <lib name=DTWorkMCHSCPAnalysis>
+</export>

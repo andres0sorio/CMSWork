@@ -1,0 +1,20 @@
+lhe2lhco: lee datos de entrada que se han convertido de LHE->ROOT.
+
+- corre un analisis de los datos del MC (algunos histogramas de control)
+- exporta los datos a un archivo verif.lhco en el que estan en su orden
+
+4 quarks
+1 mu
+1 MET
+
+Para correr:
+
+./lhe2lhco
+
+* Requiere de un archivo input.root, en el que los datos de la simulacion LHE se han convertido a un Tree de ROOT usando el programa ExRootAnalysis.
+
+* Para convertir los datos del formato LHE al formato ROOT, usamos la instalacion que se encuentra en el servidor y hacer 
+los siguiente (en el servidor, las variables de entorno contienen el PATH y el LD_LIBRARY_PATH necesarios)
+
+
+> ExRootLHEFConverter input.lhe output.root
