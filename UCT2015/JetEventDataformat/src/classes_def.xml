@@ -1,0 +1,8 @@
+<lcgdict>
+ <class name="Region"/>
+ <class name="std::vector<Region>"/>
+ <class name="edm::Wrapper<std::vector<Region> >"/>
+ <class name="SimpleJet"/>
+ <class name="std::vector<SimpleJet>"/>
+ <class name="edm::Wrapper<std::vector<SimpleJet> >"/>
+</lcgdict>
